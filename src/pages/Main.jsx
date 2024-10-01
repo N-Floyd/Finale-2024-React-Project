@@ -7,6 +7,6 @@ const Main = () => {
      <div className='secondText text-[14px] text-white font-[500] mt-[10px]'>Order Now</div>
     </div>
   )
-}
+};
 
 export default Main
