@@ -5,6 +5,7 @@ import Underheader from './pages/Underheader';
 import Shipping from './pages/Shipping';
 import Bestselling from './pages/Bestselling';
 import Browsing from './pages/Browsing';
+import Productlist from './pages/Productlist';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Shipping />
       <Bestselling />
       <Browsing />
+      <Productlist />
     </div>
   );
 }
