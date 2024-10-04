@@ -6,6 +6,7 @@ import Shipping from './pages/Shipping';
 import Bestselling from './pages/Bestselling';
 import Browsing from './pages/Browsing';
 import Productlist from './pages/Productlist';
+import Footer from './pages/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Bestselling />
       <Browsing />
       <Productlist />
+      <Footer />
     </div>
   );
 }
