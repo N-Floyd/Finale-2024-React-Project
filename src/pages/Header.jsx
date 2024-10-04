@@ -23,8 +23,8 @@ const Header = () => {
       <div className="flex justify-end w-full gap-6">
         <div className="flex items-center h-[45px] text-[#878A92] border border-gray-400 rounded-lg px-4">
           <div className='flex items-center'>
-            <img src="/images/search.svg" className='w-8 h-8' alt="search" />
-            <input type="text" className='w-full h-full outline-none ml-4' />
+            <img src="/images/search.svg" className='w-[24px] h-[24px]' alt="search" />
+            <input type="text" placeholder="Search products" className='w-full h-full outline-none ml-2' />
           </div>
         </div>
 
