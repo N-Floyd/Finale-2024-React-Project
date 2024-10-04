@@ -1,12 +1,12 @@
 import './App.css';
-import Main from './pages/Main'
-import Header from './pages/Header';
-import Underheader from './pages/Underheader';
-import Shipping from './pages/Shipping';
-import Bestselling from './pages/Bestselling';
-import Browsing from './pages/Browsing';
-import Productlist from './pages/Productlist';
-import Footer from './pages/Footer';
+import Main from './components/Main'
+import Header from './components/Header';
+import Underheader from './components/Underheader';
+import Shipping from './components/Shipping';
+import Bestselling from './components/Bestselling';
+import Browsing from './components/Browsing';
+import Productlist from './components/Productlist';
+import Footer from './components/Footer';
 
 function App() {
   return (
