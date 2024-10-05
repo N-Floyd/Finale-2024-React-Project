@@ -2,7 +2,6 @@ import './App.css';
 import Discount from './components/Discount';
 import Main from './components/Main'
 import Header from './components/Header';
-import Underheader from './components/Underheader';
 import Shipping from './components/Shipping';
 import Bestselling from './components/Bestselling';
 import Browsing from './components/Browsing';
@@ -18,15 +17,9 @@ function App() {
         {/* <Route path="/" element={<Home />} /> */}
         <Route path="/product" element={<Product />} />
       </Routes>
-      <Discount />
+      
       <Main />
-      <Header />
-      <Underheader />
-      <Shipping />
-      <Bestselling />
-      <Browsing />
-      <Productlist />
-      <Footer />
+      
     </div>
   );
 }
