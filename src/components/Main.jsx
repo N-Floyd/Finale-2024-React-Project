@@ -6,7 +6,7 @@ import Header from "./Header";
 import Productlist from "./Productlist";
 import Shipping from "./Shipping";
 
-const Underheader = () => {
+const Main = () => {
   return (
     <div>
       <Discount />
@@ -47,4 +47,4 @@ const Underheader = () => {
   );
 };
 
-export default Underheader;
+export default Main;
