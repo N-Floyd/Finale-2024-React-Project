@@ -1,7 +1,7 @@
 const Header = () => {
   return (
-    <div className=" flex justify-between max-w-[1116px] py-8  mx-auto">
-      <div className=' flex  h-[40px] gap-[103px]'>
+    <div className=" flex justify-between max-w-[1116px] py-8 mx-auto">
+      <div className=' flex h-[40px] gap-[103px]'>
         <div className='w-[163px] h-[40px]'>
           <img src="/images/logoeco.png" alt="logo" />
         </div>

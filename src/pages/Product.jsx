@@ -1,7 +1,12 @@
 import React from "react";
 import Discount from "../components/Discount";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
+
 
 const Product = () => {
     return (
@@ -21,7 +26,19 @@ const Product = () => {
                 <div className="flex justify-between max-w-[1116px] py-8  mx-auto">
                     <div>
                         <div className="w-[534px] h-[574px] bg-[#F6F6F6]">
-                            <img className="w-[288px] h-[404px] mt-[29px] ml-[123px]" src="/images/shiirt.png" alt="" />
+
+                            <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+                                <SwiperSlide>
+                                    <img className="w-[288px] h-[404px] mt-[29px] ml-[123px]" src="/images/shiirt.png" alt="" />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img className="w-[288px] h-[404px] mt-[29px] ml-[123px]" src="/images/shiirt.png" alt="" />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img className="w-[288px] h-[404px] mt-[29px] ml-[123px]" src="/images/shiirt.png" alt="" />
+                                </SwiperSlide>
+                            </Swiper>
+
                         </div>
                     </div>
 
@@ -58,10 +75,14 @@ const Product = () => {
                                 </div>
                                 <div className="w-[164px] h-[78px] mt-10">
                                     <h3 className="text-[12px] text-[#5C5F6A]">QUANTITY</h3>
-                                    <div className="flex justify-between mt-3 w-[164px] h-[44px] pr-[16px] pl-[16px] border-solid border-2 rounded-[4px] border-[#E6E7E8]">
-                                        <button className="text-[40px] text-[#5C5F6A]">-</button>
+                                    <div className="flex justify-between items-center mt-3 w-[164px] h-[44px] pr-[16px] pl-[16px] border-solid border-2 rounded-[4px] border-[#E6E7E8]">
+                                        <button className="text-[#5C5F6A]">
+                                            <img className="w-[20px] j-[20px]" src="/images/minus.svg" alt="remove icon" />
+                                        </button>
                                         <p className="text-[24px]">1</p>
-                                        <button className="text-[40px] text-[#5C5F6A]">+</button>
+                                        <button className="text-[#5C5F6A]">
+                                            <img className="w-[20px] j-[20px]" src="/images/plus.svg" alt="add icon" />
+                                        </button>
                                     </div>
                                 </div>
                                 <div className="flex w-[343px] h-[43px] mt-8 gap-[16px]">
