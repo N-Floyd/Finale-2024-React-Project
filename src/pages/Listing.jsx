@@ -11,7 +11,7 @@ const Listing = () => {
             <div className=" bg-[#F6F6F6] h-[64px]">
                 <div className="flex w-[159px] pt-5 ml-52">
                     <p className="w-[80px] h-[25px] text-[14px] text-[#5C5F6A]">Ecommerce</p>
-                    <img className="w-[24px] h-[24px] mr-2" src="/images/rightarrow.svg" alt="" />
+                    <img className="w-[24px] h-[24px] mr-2" src="/images/rightarrow.svg" alt="arrow icon" />
                     <p className="w-[47px] h-[25px] text-[14px] font-semibold text-[#0E1422]">Search</p>
                 </div>
             </div>
