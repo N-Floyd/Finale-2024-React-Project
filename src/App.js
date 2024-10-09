@@ -8,6 +8,7 @@ import Checkout from './pages/Checkout';
 import AfterPaymentS from './pages/AfterPaymentS';
 import AfterPaymentF from './pages/AfterPaymentF';
 import Login from './pages/Login';
+import SignUp from './pages/SignUp';
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
         <Route path="/AfterPaymentS" element={<AfterPaymentS />} />
         <Route path="AfterPaymentF" element={<AfterPaymentF />} />
         <Route path="Login" element={<Login />} />
+        <Route path="SignUp" element={<SignUp />} />
+
       </Routes>
     </div>
   );
