@@ -1,15 +1,15 @@
 const Header = () => {
   return (
-    <div className=" flex justify-between max-w-[1116px] py-8 ml-[175px]">
-      <div className=' flex h-[40px] gap-[103px]'>
-        <div className='w-[163px] h-[40px]'>
+    <div className="flex justify-between items-center max-w-[1116px] py-8 m-auto">
+      <div className=' flex gap-[103px]'>
+        <div className='w-[163px]'>
           <img src="/images/logoeco.png" alt="logo" />
         </div>
 
-        <div className='mt-[10px] w-[337px] h-[25px] text-[#5C5F6A]'>
+        <div className='mt-[10px] text-[#5C5F6A]'>
           <ul className='flex gap-[32px]'>
             <li><a href="#">Home</a></li>
-            <div className='flex w-[106px] h-[25px] gap-[8px]'>
+            <div className='flex gap-[8px]'>
               <li><a href="#">Categories </a></li>
               <img src="/images/dropd.svg" alt="dropdownIcon" />
             </div>

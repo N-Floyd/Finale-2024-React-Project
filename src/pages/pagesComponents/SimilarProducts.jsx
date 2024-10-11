@@ -1,14 +1,17 @@
-const Bestselling = () => {
-    return (
-        <div className="mt-[72px]">
-            <div className="flex justify-center">
+import React from 'react'
+
+const SimilarProducts = () => {
+  return (
+    <div>
+        <div>
+            <div className="mt-[136px]">
                 <div>
-                    <p className=" text-[#878A92] text-[12px]">SHOP NOW</p>
-                    <h5 className="text-[#0E1422] text-[24px] font-bold">Best Selling</h5>
+                    <p className=" text-[#0E1422] text-[24px] font-bold">You might also like</p>
+                    <h5 className="text-[#878A92] text-[12px] mt-1">SIMILAR PRODUCTS</h5>
                 </div>
             </div>
 
-            <div className='flex justify-between max-w-[1116px] m-auto mt-[80px]'>
+            <div className='flex justify-between max-w-[1116px] m-auto mt-[56px]'>
 
                 <div className=' rounded-[4px] px-[8px] py-[16px] '>
                     <img src="/images/shirt1.png" alt="shirt" />
@@ -64,12 +67,8 @@ const Bestselling = () => {
                 </div>
             </div>
         </div>
-
-
-
-
-
-    )
+    </div>
+  )
 };
 
-export default Bestselling;
+export default SimilarProducts;
