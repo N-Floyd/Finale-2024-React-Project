@@ -1,6 +1,6 @@
 const Browsing = () => {
     return (
-        <div className=" bg-[#F6F6F6] mt-[168px]">
+        <div className="bg-[#F6F6F6] mt-[168px]">
             <div className="flex justify-between items-center max-w-[1116px] m-auto">
                 <div>
                     <h4 className="text-[#0E1422] text-[24px] font-bold">Browse Our Fashion Paradise!</h4>

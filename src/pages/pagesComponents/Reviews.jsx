@@ -3,7 +3,7 @@ import React from 'react'
 const Reviews = () => {
   return (
     <div>
-        <div className="flex gap-[32px] max-w-[1116px] mt-[176px]">
+        <div className="flex gap-[32px] max-w-[1116px] mt-[176px] mx-auto">
                     <div className="mt-[72px] w-[241px]">
                         <div className="flex px-[24px] py-[8px] gap-[10px] rounded-[8px]">
                             <img src="/images/dots.svg" alt="dots" />
