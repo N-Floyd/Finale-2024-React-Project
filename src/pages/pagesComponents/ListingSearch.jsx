@@ -10,7 +10,6 @@ const ListingSearch = () => {
                     <a className="font-semibold text-[#0E1422]" href='/listing'>Search</a>
                 </div>
             </div>
-
         </div>
     )
 };

@@ -18,12 +18,10 @@ const Product = () => {
         <div>
             <Discount />
             <Header />
-            {/* <div className="max-w-[1116px] mx-auto border-t"> */}
             <BlackManTshirt />
             <ProductSwiper /> 
             <Reviews />
             <SimilarProducts />
-            {/* </div> */}
             <FooterF />
             <Footer />
         </div>
