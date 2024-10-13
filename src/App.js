@@ -11,6 +11,8 @@ import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import ForgotP from './pages/ForgotP';
 import ResetP from './pages/ResetP';
+import Orders from './pages/Orders';
+
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
         <Route path="SignUp" element={<SignUp />} />
         <Route path="ForgotP" element={<ForgotP />} />
         <Route path="ResetP" element={<ResetP />} />
+        <Route path='Orders' element={<Orders />} />
+       
       </Routes>
     </div>
   );
