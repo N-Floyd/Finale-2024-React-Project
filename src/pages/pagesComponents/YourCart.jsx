@@ -98,6 +98,6 @@ const YourCart = () => {
             </div>
         </div>
     )
-}
+};
 
-export default YourCart
+export default YourCart;
