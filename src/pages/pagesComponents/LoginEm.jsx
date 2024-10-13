@@ -24,8 +24,7 @@ const LoginEm = () => {
             <div className='flex justify-end mt-[16px]'>
             <p className='text-[#474B57] font-semibold'>Forgot Password?</p>
             </div>
-            <button className='w-[318px] h-[44px] bg-[#0E1422] text-white rounded-[4px] mt-[24px]'>Login
-            </button>
+            <button className='w-[318px] h-[44px] bg-[#0E1422] text-white rounded-[4px] mt-[24px]'>Login</button>
             <div className='flex justify-center mt-[24px]'>
             <a className='text-[#5C5F6A]' href='/signup'>Don't have an account? Sign up</a>
             </div>
