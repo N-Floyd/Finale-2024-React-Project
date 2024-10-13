@@ -9,6 +9,7 @@ import AfterPaymentS from './pages/AfterPaymentS';
 import AfterPaymentF from './pages/AfterPaymentF';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
+import ForgotP from './pages/ForgotP';
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
         <Route path="AfterPaymentF" element={<AfterPaymentF />} />
         <Route path="Login" element={<Login />} />
         <Route path="SignUp" element={<SignUp />} />
-
+        <Route path="ForgotP" element={<ForgotP />} />
       </Routes>
     </div>
   );
