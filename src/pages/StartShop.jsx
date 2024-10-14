@@ -8,7 +8,7 @@ import FooterBG from './pagesComponents/FooterBG';
 const StartShop = () => {
   return (
     <div>
-         <Discount />
+        <Discount />
         <Header />
         <MyAccount />
         <StartShopping />

@@ -17,7 +17,7 @@ import Adress from './pages/Adress';
 import Details from './pages/Details';
 import Password from './pages/Password';
 import StartShop from './pages/StartShop';
-
+import AdminLogin from './pages/AdminLogin';
 
 
 function App() {
@@ -41,6 +41,7 @@ function App() {
         <Route path='Details' element={<Details />} />
         <Route path='Password' element={<Password />} />
         <Route path='StartShop' element={<StartShop />} />
+        <Route path='AdminLogin' element={<AdminLogin />} />
       </Routes>
     </div>
   );
