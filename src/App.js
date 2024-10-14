@@ -16,6 +16,7 @@ import Wishlist from './pages/Wishlist';
 import Adress from './pages/Adress';
 import Details from './pages/Details';
 import Password from './pages/Password';
+import StartShop from './pages/StartShop';
 
 
 
@@ -39,6 +40,7 @@ function App() {
         <Route path='Adress' element={<Adress />} />
         <Route path='Details' element={<Details />} />
         <Route path='Password' element={<Password />} />
+        <Route path='StartShop' element={<StartShop />} />
       </Routes>
     </div>
   );
