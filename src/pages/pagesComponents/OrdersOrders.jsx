@@ -6,8 +6,8 @@ const OrdersOrders = () => {
             <div className='w-[212px] '>
                 <div>
                     <div className='flex gap-[10px] bg-[#F6F6F6] rounded-[8px] px-[24px] py-[8px] mt-[60px]'>
-                        <img className='w-[24px] h-[24px]' src="/images/orders1.svg" alt="shopping trolley" />
-                        <a className='text-[#0E1422]' href='/orders'>Orders</a>
+                        <img className='w-[24px] h-[24px]' src="/images/orders1d.svg" alt="shopping trolley" />
+                        <a className='text-[#0E1422] font-semibold' href='/orders'>Orders</a>
                     </div>
                     <div className='flex gap-[10px] rounded-[8px] px-[24px] py-[8px] mt-[16px]'>
                         <img className='w-[24px] h-[24px]' src="/images/orders2.svg" alt="heart" />

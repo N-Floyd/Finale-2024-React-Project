@@ -14,6 +14,7 @@ import ResetP from './pages/ResetP';
 import Orders from './pages/Orders';
 import Wishlist from './pages/Wishlist';
 import Adress from './pages/Adress';
+import Details from './pages/Details';
 
 
 
@@ -35,6 +36,7 @@ function App() {
         <Route path='Orders' element={<Orders />} />
         <Route path='Wishlist' element={<Wishlist />} />
         <Route path='Adress' element={<Adress />} />
+        <Route path='Details' element={<Details />} />
       </Routes>
     </div>
   );
