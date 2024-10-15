@@ -17,7 +17,8 @@ import Adress from './pages/Adress';
 import Details from './pages/Details';
 import Password from './pages/Password';
 import StartShop from './pages/StartShop';
-import AdminLogin from './pages/AdminLogin';
+import AdminLogin from './pages/AdminPages/AdminLogin';
+import Dashboard from './pages/AdminPages/Dashboard';
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
         <Route path='Password' element={<Password />} />
         <Route path='StartShop' element={<StartShop />} />
         <Route path='AdminLogin' element={<AdminLogin />} />
+        <Route path='Dashboard' element={<Dashboard />} />
       </Routes>
     </div>
   );
