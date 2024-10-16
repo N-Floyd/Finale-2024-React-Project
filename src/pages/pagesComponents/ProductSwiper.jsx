@@ -9,7 +9,7 @@ const ProductSwiper = () => {
         <div>
             <div className="flex justify-between max-w-[1116px] py-8  mx-auto">
                 <div>
-                    <div className="w-[534px] h-[574px] bg-[#F6F6F6]">
+                    <div className="max-w-[534px] h-[574px] bg-[#F6F6F6]">
 
                         <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
                             <SwiperSlide>

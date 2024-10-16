@@ -3,7 +3,7 @@ import React from 'react'
 const StatisticsS = () => {
     return (
         <div className='flex gap-[38px] mt-[40px]'>
-            <div className='w-[328px] h-[475px] border border-[#E9E9EB] rounded-[8px]'>
+            <div className='max-w-[328px] h-[475px] border border-[#E9E9EB] rounded-[8px]'>
                 <div className='mt-[32px] px-[32px]'>
                     <p className='font-semibold'>Best Selling</p>
                     <p className=' text-[#5C5F6A] text-[12px] mt-[6px]'>THIS MONTH</p>
@@ -33,7 +33,7 @@ const StatisticsS = () => {
                     <img className='mt-[32px] w-[96px] h-[96px]' src="/images/dashbord3.png" alt="" />
                 </div>
             </div>
-            <div className='w-[695px] h-[475px] border border-[#E9E9EB] rounded-[8px]'>
+            <div className='max-w-[695px] h-[475px] border border-[#E9E9EB] rounded-[8px]'>
                 <div className='flex gap-[16px]  px-[40px] mt-[40px]'>
                     <p className='font-bold'>Recent Orders</p>
                     <button className='bg-[#F6F6F6] w-[78px] h-[28px] rounded-[100px] text-[12px]'>View All</button>

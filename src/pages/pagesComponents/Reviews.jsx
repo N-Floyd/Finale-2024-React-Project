@@ -4,7 +4,7 @@ const Reviews = () => {
   return (
     <div>
         <div className="flex gap-[32px] max-w-[1116px] mt-[176px] mx-auto">
-                    <div className="mt-[72px] w-[241px]">
+                    <div className="mt-[72px] max-w-[241px]">
                         <div className="flex px-[24px] py-[8px] gap-[10px] rounded-[8px]">
                             <img src="/images/dots.svg" alt="dots" />
                             <p className="text-[#0E1422]">Details</p>
@@ -15,7 +15,7 @@ const Reviews = () => {
                         </div>
                     </div>
 
-                    <div className=" w-[727px]">
+                    <div className="max-w-[727px]">
                         <div className="h-[198px] relative border-b">
                             <h5 className="text-[#0E1422] font-bold">Reviews</h5>
                             <div className="flex gap-3 items-center mt-4">
@@ -85,7 +85,7 @@ const Reviews = () => {
                                 <img className="w-[16px] h-[16px]" src="/images/starempty.svg" alt="" />
                             </div>
                         </div>
-                        <div className="w-[727px] flex justify-center mx-auto mt-[64px]">
+                        <div className="max-w-[727px] flex justify-center mx-auto mt-[64px]">
                             <button className="border-2 rounded-[4px] text-[#5C5F6A] text-[14px] px-[24px] py-[12px]">Load more reviews</button>
                         </div>
                     </div>

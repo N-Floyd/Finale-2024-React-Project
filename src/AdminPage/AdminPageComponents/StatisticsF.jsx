@@ -3,7 +3,7 @@ import React from 'react'
 const StatisticsF = () => {
     return (
         <div className='flex justify-between h-[187px] mt-[56px] gap-[38px]'>
-            <div className='w-[328px] h-full border border-[#E9E9EB] rounded-[8px] py-[24px] px-[27px]'>
+            <div className='max-w-[328px] h-full border border-[#E9E9EB] rounded-[8px] py-[24px] px-[27px]'>
                 <div className='flex gap-[100px]'>
                     <div className=''>
                         <p className='font-semibold'>Total Sales</p>
@@ -13,7 +13,7 @@ const StatisticsF = () => {
                 </div>
                 <img className='w-[274px] h-[46px] mt-[44px]' src="/images/dashbord1.png" alt="" />
             </div>
-            <div className='w-[328px] h-full border border-[#E9E9EB] rounded-[8px] py-[24px] px-[27px]'>
+            <div className='max-w-[328px] h-full border border-[#E9E9EB] rounded-[8px] py-[24px] px-[27px]'>
                 <div className='flex gap-[126px]'>
                     <div>
                         <p className='font-semibold'>Customers</p>
@@ -23,7 +23,7 @@ const StatisticsF = () => {
                 </div>
                 <img className='w-[274px] h-[46px] mt-[44px]' src="/images/dashbord2.png" alt="" />
             </div>
-            <div className='w-[328px] h-full border border-[#E9E9EB] rounded-[8px] py-[24px] px-[27px]'>
+            <div className='max-w-[328px] h-full border border-[#E9E9EB] rounded-[8px] py-[24px] px-[27px]'>
                 <div className='flex gap-[68px]'>
                     <div>
                         <p className='font-semibold'>Orders</p>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const DetalesAside = () => {
     return (
-        <div className='w-[212px] '>
+        <div className='max-w-[212px] '>
             <div>
                 <div className='flex gap-[10px] rounded-[8px] px-[24px] py-[8px] mt-[60px]'>
                     <img className='w-[24px] h-[24px]' src="/images/orders1.svg" alt="shopping trolley" />

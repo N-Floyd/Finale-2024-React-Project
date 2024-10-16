@@ -4,7 +4,7 @@ const SimilarProducts = () => {
   return (
     <div>
         <div>
-            <div className="mt-[136px] w-[1116px] mx-auto">
+            <div className="mt-[136px] max-w-[1116px] mx-auto">
                 <div>
                     <p className=" text-[#0E1422] text-[24px] font-bold">You might also like</p>
                     <h5 className="text-[#878A92] text-[12px] mt-1">SIMILAR PRODUCTS</h5>

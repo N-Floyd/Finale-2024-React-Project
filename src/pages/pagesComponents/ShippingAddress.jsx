@@ -7,7 +7,7 @@ const ShippingAddress = () => {
                 <p className='text-[16px] text-[#0E1422] font-semibold'>Shipping Address</p>
                 <div className=''>
                     <label className='block mt-[64px]' for="adr">Address</label>
-                    <input className='border border-1 rounded-[6px] w-[534px] h-[45px]' type="text" name="address"></input>
+                    <input className='border border-1 rounded-[6px] max-w-[534px] h-[45px]' type="text" name="address"></input>
                     <div className='flex gap-[16px] mt-[15px]'>
                         <div className='h-[69px]'>
                             <label className='block' for="adr">City</label>
@@ -70,7 +70,7 @@ const ShippingAddress = () => {
                     <p className='text-[#0E1422] font-semibold'>Total</p>
                     <p className='text-[#0E1422] font-semibold'>$ 78.00</p>
                 </div>
-                <button className='w-[372px] h-[44px] rounded-[4px] bg-[#0E1422] text-white mt-[24px]' type="submit" value="Submit">Place Order</button>
+                <button className='max-w-[372px] h-[44px] rounded-[4px] bg-[#0E1422] text-white mt-[24px]' type="submit" value="Submit">Place Order</button>
             </div>
         </div>
     )

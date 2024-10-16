@@ -2,7 +2,7 @@ import React from 'react'
 
 const LoginAdmin = () => {
     return (
-        <div className='w-[384px] h-[453px] border border-[#E9E9EB] rounded-[8px] m-auto'>
+        <div className='max-w-[384px] h-[453px] border border-[#E9E9EB] rounded-[8px] m-auto'>
             <div className='flex justify-center'>
                 <div className='flex gap-[12px] mt-[32px]'>
                     <img src="/images/adminlogo.png" alt="" />
@@ -22,7 +22,7 @@ const LoginAdmin = () => {
                 </div>
             </div>
             <div className='flex justify-center'>
-                <button className='w-[318px] h-[44px] bg-[#0E1422] text-white rounded-[4px] mt-[40px]'>Login</button>
+                <button className='max-w-[318px] h-[44px] bg-[#0E1422] text-white rounded-[4px] mt-[40px]'>Login</button>
             </div>
         </div>
     )

@@ -1,7 +1,7 @@
 const Shipping = () => {
     return (
         <div className="flex w-[1116px] h-[266px] ml-[174px] mt-[48px] gap-[36px]">
-            <div className="w-[328px] h-[218px]">
+            <div className="max-w-[328px] h-[218px]">
                 <img className='w-[48px] h-[48px] p-[5px]' src="/images/shippin.svg" alt="shipping car icon" />
                 <h6 className='w-[107px] h-[19px] mt-[10px] text-[16px] font-bold'>Free Shipping</h6>
                 <p className='mt-[15px] text-[#5C5F6A] w-[272px] h-[50px] text-[14px]'>Upgrade 
@@ -9,7 +9,7 @@ const Shipping = () => {
                 </p>
             </div>
 
-            <div className="w-[328px] h-[218px]">
+            <div className="max-w-[328px] h-[218px]">
                 <img className='w-[48px] h-[48px] p-[5px]' src="/images/guarantee.svg" alt="star icon" />
                 <h6 className='w-[178px] h-[19px] mt-[10px] text-[16px] font-bold'>Satisfaction Guarantee</h6>
                 <p className='mt-[15px] text-[#5C5F6A] w-[272px] h-[50px] text-[14px]'>Shop confidently with 
@@ -17,7 +17,7 @@ const Shipping = () => {
                 </p>
             </div>
 
-            <div className="w-[328px] h-[218px]">
+            <div className="max-w-[328px] h-[218px]">
                 <img className='w-[48px] h-[48px] p-[5px]' src="/images/payment.svg" alt="sequrity icon" />
                 <h6 className='w-[127px] h-[19px] mt-[10px] text-[16px] font-bold'>Secure Payment</h6>
                 <p className='parpaymen mt-[15px] text-[#5C5F6A] w-[272px] h-[50px] text-[14px]'>Your security

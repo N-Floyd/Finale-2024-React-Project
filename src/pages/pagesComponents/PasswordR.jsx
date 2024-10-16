@@ -2,7 +2,7 @@ import React from 'react'
 
 const PasswordR = () => {
     return (
-        <div className='w-[534px]'>
+        <div className='max-w-[534px]'>
             <h4 className='text-[#0E1422] font-bold'>Change Password</h4>
             <div className='mt-[48px]'>
                 <label className='block' for="adr">New Password</label>

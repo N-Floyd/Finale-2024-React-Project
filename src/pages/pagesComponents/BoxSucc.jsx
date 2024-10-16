@@ -10,7 +10,7 @@ const BoxSucc = () => {
                 <h2 className='text-[#0E1422] font-bold mt-[21px] text-[24px]'>Thank you for shopping</h2>
             </div>
             <div className='flex justify-center mt-[16px]'>
-                <p className='text-[#5C5F6A] w-[379px]'>Your order has been successfully placed and is now being processed.</p>
+                <p className='text-[#5C5F6A] max-w-[379px]'>Your order has been successfully placed and is now being processed.</p>
             </div>
             <div className='flex justify-center mt-[48px]'>
                 <div>

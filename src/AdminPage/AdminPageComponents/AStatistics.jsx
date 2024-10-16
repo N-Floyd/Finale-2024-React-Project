@@ -5,7 +5,7 @@ import StatisticsS from './StatisticsS';
 
 const AStatistics = () => {
   return (
-    <div className='w-[1060px] mt-[15px]'>
+    <div className='max-w-[1060px] mt-[15px]'>
       <AdminDashboard />
       <StatisticsF />
       <StatisticsS />

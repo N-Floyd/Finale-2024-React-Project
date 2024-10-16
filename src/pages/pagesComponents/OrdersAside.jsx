@@ -2,7 +2,7 @@ import React from 'react'
 
 const OrdersAside = () => {
     return (
-        <div className='w-[212px] '>
+        <div className='max-w-[212px]'>
             <div>
                 <div className='flex gap-[10px] bg-[#F6F6F6] rounded-[8px] px-[24px] py-[8px] mt-[60px]'>
                     <img className='w-[24px] h-[24px]' src="/images/orders1d.svg" alt="shopping trolley" />

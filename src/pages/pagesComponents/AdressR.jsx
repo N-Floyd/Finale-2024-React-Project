@@ -2,7 +2,7 @@ import React from 'react'
 
 const AdressR = () => {
     return (
-        <div className='w-[534px]'>
+        <div className='max-w-[534px]'>
             <div>
                 <h4 className='text-[#0E1422] font-bold'>Shipping Address</h4>
             </div>

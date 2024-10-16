@@ -7,7 +7,7 @@ const YourCart = () => {
                 <div>
                     <div className=''>
                         <h5 className='text-[#0E1422] font-bold mt-[16px]'>Your cart</h5>
-                        <hr className='mt-[18px] w-[628px]'></hr>
+                        <hr className='mt-[18px] max-w-[628px]'></hr>
                     </div>
                     <div className='flex justify-between mt-[48px]'>
                         <div className='flex gap-[32px]'>

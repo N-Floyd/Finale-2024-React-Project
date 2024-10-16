@@ -2,7 +2,7 @@ import React from 'react'
 
 const OrdersR = () => {
     return (
-        <div className='w-[617px]'>
+        <div className='max-w-[617px]'>
             <div>
                 <h4 className='text-[#0E1422] font-bold'>Orders</h4>
             </div>
