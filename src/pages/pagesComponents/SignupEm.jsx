@@ -28,7 +28,7 @@ const SignupEm = () => {
             <div className='mt-[16px]'>
                 <p className=' text-[#5C5F6A] w-[316px] text-[12px]'>By creating an account you agree with our Terms of Service, Privacy Policy,</p>
             </div>
-            <button className='max-w-[318px] h-[44px] bg-[#0E1422] text-white rounded-[4px] mt-[24px]'>Create account
+            <button className='w-[318px] h-[44px] bg-[#0E1422] text-white rounded-[4px] mt-[24px]'>Create account
             </button>
             <div className='flex justify-center mt-[24px]'>
             <a className='text-[#5C5F6A]' href='/login'>Already have an account? Log in</a>

@@ -1,6 +1,6 @@
 const Shipping = () => {
     return (
-        <div className="flex w-[1116px] h-[266px] ml-[174px] mt-[48px] gap-[36px]">
+        <div className="flex max-w-[1116px] justify-between h-[266px] ml-[174px] mt-[48px] gap-[36px]">
             <div className="max-w-[328px] h-[218px]">
                 <img className='w-[48px] h-[48px] p-[5px]' src="/images/shippin.svg" alt="shipping car icon" />
                 <h6 className='w-[107px] h-[19px] mt-[10px] text-[16px] font-bold'>Free Shipping</h6>

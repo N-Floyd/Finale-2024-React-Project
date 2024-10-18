@@ -18,7 +18,7 @@ const Discover = () => {
 
                 </div>
 
-                <div className='relative max-w-[340px] h-[385px]'>
+                <div className='relative w-[340px] h-[385px]'>
                     <img className='absolute w-[38px] h-[38px] mt-[92.32px]' src="/images/star.png" alt="star" />
                     <img className='absolute w-[340px] h-[340px] mt-[89px]' src="/images/circle.png" alt="circle" />
                     <img className='absolute w-[255px] h-[382px] mt-[66px] ml-[89px]' src="/images/dude.png" alt="boy" />

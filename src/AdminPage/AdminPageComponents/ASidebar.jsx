@@ -8,7 +8,7 @@ const ASidebar = () => {
           <h1 className='text-[#0E1422] font-bold text-[20px]'>Admin</h1>
         </div>
         <div className='px-[24px]'>
-          <div className='flex gap-[10px] bg-[#F6F6F6] rounded-[8px] px-[24px] py-[8px] mt-[48px]'>
+          <div className='flex w-[212px] gap-[10px] bg-[#F6F6F6] rounded-[8px] px-[24px] py-[8px] mt-[48px]'>
             <img className='w-[24px] h-[24px]' src="/images/aside1d.svg" alt="Dashboard icon" />
             <a className='text-[#0E1422] font-semibold' href='/dashboard'>Dashboard</a>
           </div>

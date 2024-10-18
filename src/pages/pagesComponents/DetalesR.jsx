@@ -9,11 +9,11 @@ const DetalesR = () => {
             </div>
             <div className='mt-[32px]'>
                 <label className='block' for="adr">Full Name</label>
-                <input className='border border-1 rounded-[6px] max-w-[320px] h-[45px]' type="text" name="address"></input>
+                <input className='border border-1 rounded-[6px] w-[320px] h-[45px]' type="text" name="address"></input>
             </div>
             <div className='mt-[16px]'>
                 <label className='block' for="adr">Email</label>
-                <input className='border border-1 rounded-[6px] max-w-[320px] h-[45px]' type="email" name="address"></input>
+                <input className='border border-1 rounded-[6px] w-[320px] h-[45px]' type="email" name="address"></input>
             </div>
             <button className='w-[144px] h-[44px] rounded-[4px] bg-[#0E1422] text-white mt-[64px]' type="submit" value="Submit">Save Changes</button>
         </div>

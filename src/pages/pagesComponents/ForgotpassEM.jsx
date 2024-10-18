@@ -11,7 +11,7 @@ const ForgotpassEM = () => {
             <label className='block' for="adr">Email</label>
             <input className='border border-1 rounded-[6px] w-[320px] h-[45px]' type="email" name="address"></input>
         </div>
-        <button className='max-w-[318px] h-[44px] bg-[#0E1422] text-white rounded-[4px] mt-[24px]'>Send reset link</button>
+        <button className='w-[318px] h-[44px] bg-[#0E1422] text-white rounded-[4px] mt-[24px]'>Send reset link</button>
         </div>
     </div>
   )
