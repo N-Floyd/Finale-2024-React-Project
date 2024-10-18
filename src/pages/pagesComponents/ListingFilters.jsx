@@ -25,7 +25,7 @@ const ListingFilters = () => {
                     <img src="/images/dropd.svg" alt="dropdownIcon" />
                 </div>
             </div>
-            <div class="grid grid-rows-3 grid-flow-col gap-4 max-w-[1116px] mx-auto mt-[16px]">
+            <div class="grid grid-rows-3 grid-flow-col gap-[24px] max-w-[1116px] mt-[16px]">
                 <div className="px-[8px] py-[16px]">
                     <img src="/images/ltshirt1.png" alt="shirt" />
                     <p className='text-[#0E1422] text-[14px] mt-[25px] font-semibold'>Classic Monochrome Tees</p>

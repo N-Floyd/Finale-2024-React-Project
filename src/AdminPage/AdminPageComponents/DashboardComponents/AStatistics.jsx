@@ -1,5 +1,5 @@
 import React from 'react'
-import AdminDashboard from '../AdminPageComponents/AdminDashboard';
+import AdminDashboard from './AdminDashboard';
 import StatisticsF from './StatisticsF';
 import StatisticsS from './StatisticsS';
 

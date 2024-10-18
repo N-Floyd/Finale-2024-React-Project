@@ -1,5 +1,6 @@
 import React from 'react'
-import Statistics from './AdminPageComponents/Statistics';
+import Statistics from './AdminPageComponents/DashboardComponents/Statistics';
+
 
 const Dashboard = () => {
   return (
