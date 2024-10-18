@@ -1,25 +1,25 @@
 import './App.css';
-import Main from './src/components/Main'
+import Main from './components/Main'
 import { Routes, Route } from 'react-router-dom';
-import Product from './src/pages/Product';
-import Listing from './src/pages/Listing';
-import Cart from './src/pages/Cart';
-import Checkout from './src/pages/Checkout';
-import AfterPaymentS from './src/pages/AfterPaymentS';
-import AfterPaymentF from './src/pages/AfterPaymentF';
-import Login from './src/pages/Login';
-import SignUp from './src/pages/SignUp';
-import ForgotP from './src/pages/ForgotP';
-import ResetP from './src/pages/ResetP';
-import Orders from './src/pages/Orders';
-import Wishlist from './src/pages/Wishlist';
-import Adress from './src/pages/Adress';
-import Details from './src/pages/Details';
-import Password from './src/pages/Password';
-import StartShop from './src/pages/StartShop';
-import AdminLogin from './src/AdminPage/AdminLogin';
-import Dashboard from './src/AdminPage/Dashboard';
-import AProducts from './src/AdminPage/AProducts';
+import Product from './pages/Product';
+import Listing from './pages/Listing';
+import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
+import AfterPaymentS from './pages/AfterPaymentS';
+import AfterPaymentF from './pages/AfterPaymentF';
+import Login from './pages/Login';
+import SignUp from './pages/SignUp';
+import ForgotP from './pages/ForgotP';
+import ResetP from './pages/ResetP';
+import Orders from './pages/Orders';
+import Wishlist from './pages/Wishlist';
+import Adress from './pages/Adress';
+import Details from './pages/Details';
+import Password from './pages/Password';
+import StartShop from './pages/StartShop';
+import AdminLogin from './AdminPage/AdminLogin';
+import Dashboard from './AdminPage/Dashboard';
+import AProducts from './AdminPage/AProducts';
 
 
 function App() {
