@@ -8,7 +8,7 @@ const AProductsR = () => {
     return (
         <div>
             <AProductDash />
-            <div className='h-[922px] border-2 mt-[64px] px-[44px]'>
+            <div className='h-[922px] border-2 mt-[64px] '>
                 <AProductsSearch />
                 <ATable />
                 <APagination />

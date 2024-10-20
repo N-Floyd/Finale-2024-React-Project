@@ -2,8 +2,8 @@ import React from 'react'
 
 const APagination = () => {
     return (
-        <div className="flex justify-end ">
-            <ul className="flex justify-between w-[344px] mt-[34px]">
+        <div className="flex justify-end">
+            <ul className="flex justify-between w-[344px] mt-[34px] mr-[50px]">
                 <li>
                     <a href="#" className=" hover:bg-gray-100">
                         <img src="/images/left.svg" alt="" />

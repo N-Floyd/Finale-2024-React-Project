@@ -2,7 +2,7 @@ import React from 'react'
 
 const AProductsSearch = () => {
     return (
-        <div className='flex mt-[24px]'>
+        <div className='flex mt-[24px] px-[48px]'>
             <h2 className='font-bold'>Products</h2>
             <div className='flex justify-end w-full gap-[16px]'>
                 <button className='w-[124px] h-[40px] px-[20px] py-[12px] rounded-[4px] text-[14px] bg-[#0E1422] text-[#FFFFFF] '>Add product</button>

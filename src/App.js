@@ -20,6 +20,7 @@ import StartShop from './pages/StartShop';
 import AdminLogin from './AdminPage/AdminLogin';
 import Dashboard from './AdminPage/Dashboard';
 import AProducts from './AdminPage/AProducts';
+import AddProducts from './AdminPage/AddProducts';
 
 
 function App() {
@@ -46,7 +47,7 @@ function App() {
         <Route path='/adminLogin' element={<AdminLogin />} />
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/aproducts' element={<AProducts />} />
-      
+        <Route path='/addproducts' element={<AddProducts />} />
       </Routes>
     </div>
   );
