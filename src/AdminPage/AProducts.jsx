@@ -1,8 +1,9 @@
 import React from 'react'
+import AProductsProducts from './AdminPageComponents/AProductsComponents/AProductsProducts';
 
 const AProducts = () => {
   return (
-    <div>AProducts</div>
+    <AProductsProducts />
   )
 };
 
