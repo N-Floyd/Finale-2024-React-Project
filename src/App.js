@@ -23,6 +23,7 @@ import AProducts from './AdminPage/AProducts';
 import AddProducts from './AdminPage/AddProducts';
 import AOrders from './AdminPage/AOrders';
 import ACustumers from './AdminPage/ACustumers';
+import AReviews from './AdminPage/AReviews';
 
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
         <Route path='/addproducts' element={<AddProducts />} />
         <Route path='/aorders' element={<AOrders />} />
         <Route path='/acustumers' element={<ACustumers />} />
+        <Route path='/areviews' element={<AReviews />} />
       </Routes>
     </div>
   );
