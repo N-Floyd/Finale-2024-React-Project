@@ -14,10 +14,10 @@ const BoxFaild = () => {
             </div>
             <div className='flex justify-center mt-[48px]'>
                 <div>
-                    <div className="bg-[#0E1422] flex justify-center rounded-[4px] w-[132px] h-[44px] gap-[6px]">
+                    <a href='#' className="bg-[#0E1422] flex justify-center rounded-[4px] w-[132px] h-[44px] gap-[6px] hover:scale-110 duration-500">
                         <button className="text-[#FFFFFF]">Reorder</button>
                         <img className='w-[24px]' src="/images/arrow.svg" alt="arrow icon" />
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>

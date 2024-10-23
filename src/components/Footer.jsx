@@ -9,43 +9,43 @@ const Footer = () => {
                             DevCut is a YouTube channel for practical project-based learning.
                         </p>
                         <div className="flex justify-between w-[120px] mt-[32px]">
-                            <img src="/images/githubicon.svg" alt="github icon" />
-                            <img src="/images/instaicon.svg" alt="instagram icon" />
-                            <img src="/images/youtubeicon.svg" alt="youtube icon" />
+                            <a className="transition hover:scale-110 hover:-translate-y-1 duration-500" href="https://github.com/"><img src="/images/githubicon.svg" alt="github icon" /></a>
+                            <a className="transition hover:scale-110 hover:-translate-y-1 duration-500" href="https://www.instagram.com/"><img src="/images/instaicon.svg" alt="instagram icon" /></a>
+                            <a className="transition hover:scale-110 hover:-translate-y-1 duration-500" href="https://www.youtube.com/"><img src="/images/youtubeicon.svg" alt="youtube icon" /></a>
                         </div>
                     </div>
                     <div className="grid grid-row-3 grid-flow-col gap-16 mt-10">
                         <div className="grid gap-[40px]">
                             <p className=" text-[#878A92]">SUPPORT</p>
                             <div className="grid gap-[16px]">
-                              <p className="text-[#5C5F6A]">FAQ</p>
-                              <p className="text-[#5C5F6A]">Terms of use</p>
-                              <p className="text-[#5C5F6A]">Privacy Policy</p>
+                              <a href="#" className="transition hover:scale-110 hover:-translate-y-1 duration-500 text-[#5C5F6A]">FAQ</a>
+                              <a href="#" className="transition hover:scale-110 hover:-translate-y-1 duration-500 text-[#5C5F6A]">Terms of use</a>
+                              <a href="#" className="transition hover:scale-110 hover:-translate-y-1 duration-500 text-[#5C5F6A]">Privacy Policy</a>
                             </div>
                         </div>
                         <div className="grid gap-[40px]">
                             <p className="text-[#878A92] text-[14px]">COMPANY</p>
                             <div className="grid gap-[16px]">
-                              <p className="text-[#5C5F6A]">About us</p>
-                              <p className="text-[#5C5F6A]">Contact</p>
-                              <p className="text-[#5C5F6A]">Careers</p>
+                              <a href="#" className="transition hover:scale-110 hover:-translate-y-1 duration-500 text-[#5C5F6A]">About us</a>
+                              <a href="#" className="transition hover:scale-110 hover:-translate-y-1 duration-500 text-[#5C5F6A]">Contact</a>
+                              <a href="#" className="transition hover:scale-110 hover:-translate-y-1 duration-500 text-[#5C5F6A]">Careers</a>
                             </div>
                         </div>
                         <div className="grid gap-[40px]">
                             <p className="text-[#878A92]">SHOP</p>
                             <div className="grid gap-[16px]">
-                              <p className="text-[#5C5F6A]">My Account</p>
-                              <p className="text-[#5C5F6A]">Checkout</p>
-                              <p className="text-[#5C5F6A]">Cart</p>
+                              <a href="#" className="transition hover:scale-110 hover:-translate-y-1 duration-500 text-[#5C5F6A]">My Account</a>
+                              <a href="#" className="transition hover:scale-110 hover:-translate-y-1 duration-500 text-[#5C5F6A]">Checkout</a>
+                              <a href="#" className="transition hover:scale-110 hover:-translate-y-1 duration-500 text-[#5C5F6A]">Cart</a>
                             </div>
                         </div>
                     </div>
                     <div className="">
                        <p className="text-[#878A92]">ACCEPTED PAYMENTS</p>
                        <div className="flex justify-between opacity-[80%] mt-[40px]">
-                         <img src="/images/mastercard.svg" alt="" />
-                         <img src="/images/amex.svg" alt="" />
-                         <img src="/images/visa.svg" alt="" />
+                         <a className="transition hover:scale-110 hover:-translate-y-1 duration-500" href="#"><img src="/images/mastercard.svg" alt="" /></a>
+                         <a className="transition hover:scale-110 hover:-translate-y-1 duration-500" href="#"><img src="/images/amex.svg" alt="" /></a>
+                         <a className="transition hover:scale-110 hover:-translate-y-1 duration-500" href="#"><img src="/images/visa.svg" alt="" /></a>
                        </div>
                     </div>
                 </div>

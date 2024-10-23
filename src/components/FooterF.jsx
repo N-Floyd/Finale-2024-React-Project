@@ -16,7 +16,7 @@ const FooterF = () => {
                          w-[320px] h-[45px] rounded-[6px] px-[15px] py-[10px]">
                         </input>
                         <button className="w-[116px] h-[44px] rounded-[4px] bg-[#0E1422]
-                         text-[#FFFFFF]">Subscribe
+                         text-[#FFFFFF] hover:scale-110 duration-500">Subscribe
                         </button>
                     </div>
                 </div>

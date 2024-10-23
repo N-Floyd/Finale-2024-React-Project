@@ -1,4 +1,32 @@
 const Bestselling = () => {
+
+    const products = [
+        {
+            img: "/images/shirt1.png",
+            title: "Classic Monochrome Tees",
+            stock: "IN STOCK",
+            price: "$35.00",
+        },
+
+        {
+            img: "/images/shirt2.png",
+            title: "Monochromatic Wardrobe",
+            stock: "IN STOCK",
+            price: "$27.00",
+        },
+        {
+            img: "/images/shirt3.png",
+            title: "Essential Neutrals",
+            stock: "IN STOCK",
+            price: "$22.00",
+        },
+        {
+            img: "/images/shirt4.png",
+            title: "UTRAANET Black",
+            stock: "IN STOCK",
+            price: "$43.00",
+        }
+    ]
     return (
         <div className="mt-[72px]">
             <div className="flex justify-center">
@@ -9,66 +37,26 @@ const Bestselling = () => {
             </div>
 
             <div className='flex justify-between max-w-[1116px] m-auto mt-[80px]'>
-
-                <div className=' rounded-[4px] px-[8px] py-[16px] '>
-                    <img src="/images/shirt1.png" alt="shirt" />
-                    <p className='text-[#0E1422] text-[14px] font-bold mt-[25px]'>Classic Monochrome Tees
-                    </p>
-                    <div className='flex gap-[16px] mt-[12px]'>
-                        <button className='w-[89px] h-[28px] border-solid border-2 rounded-[100px] border-[#E6E7E8] text-[#0E1422] text-[12px]'>IN STOCK</button>
-                        <p className='text-[#474B57] text-[14px] mt-[3px]'>$35.00
-                        </p>
+                {products.map((product, index) => (
+                    <div key={index}>
+                        <div className="w-60 h-80 bg-neutral-100 rounded cursor-pointer transition hover:scale-110 duration-500">
+                            <img src={product.img} />
+                        </div>
+                        <div>
+                            <p className="font-medium text-sm mt-3">
+                                {product.title}
+                            </p>
+                            <div className="flex items-center mt-2">
+                                <button className="bg-white text-center w-20 h-7 rounded-full border text-xs font-medium mt-3 items-center">
+                                    {product.stock}
+                                </button>
+                                <div className="mt-3 ml-2 font-normal text-sm text-center">{product.price}</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-                <div className='rounded-[4px] px-[8px] py-[16px]'>
-                    <img src="/images/shirt2.png" alt="shirt" />
-                    <p className='text-[#0E1422] text-[14px] font-bold mt-[25px]'>Monochromatic Wardrobe
-                    </p>
-                    <div className='flex gap-[16px] mt-[12px]'>
-                        <button className='w-[89px] h-[28px] border-solid border-2 
-                     rounded-[100px] border-[#E6E7E8] text-[#0E1422] text-[12px]'>IN STOCK
-                        </button>
-                        <p className='w-[47px] h-[25px] text-[#474B57] 
-                     text-[14px] mt-[3px]'>$27.00
-                        </p>
-                    </div>
-                </div>
-
-                <div className='rounded-[4px] px-[8px] py-[16px]'>
-                    <img src="/images/shirt3.png" alt="" />
-                    <p className='text-[#0E1422] text-[14px] font-bold mt-[25px]'>Essential Neutrals
-                    </p>
-                    <div className='flex gap-[16px] mt-[12px]'>
-                        <button className='w-[89px] h-[28px] border-solid border-2 
-                     rounded-[100px] border-[#E6E7E8] text-[#0E1422] text-[12px]'>IN STOCK
-                        </button>
-                        <p className='w-[47px] h-[25px] text-[#474B57] 
-                     text-[14px] mt-[3px]'>$22.00
-                        </p>
-                    </div>
-                </div>
-
-                <div className='rounded-[4px] px-[8px] py-[16px]'>
-                    <img src="/images/shirt4.png" alt="" />
-                    <p className='text-[#0E1422] text-[14px] font-bold mt-[25px]'>UTRAANET Black
-                    </p>
-                    <div className='flex gap-[16px] mt-[12px]'>
-                        <button className='w-[89px] h-[28px] border-solid border-2 
-                     rounded-[100px] border-[#E6E7E8] text-[#0E1422] text-[12px]'>IN STOCK
-                        </button>
-                        <p className='w-[47px] h-[25px] text-[#474B57] 
-                     text-[14px] mt-[3px]'>$43.00
-                        </p>
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
-
-
-
-
-
     )
 };
 

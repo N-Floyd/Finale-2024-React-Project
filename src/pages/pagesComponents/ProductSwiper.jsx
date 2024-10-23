@@ -3,6 +3,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
+import ProductCounter from './ProductCounter';
+import ProductSize from './ProductColor';
+import ProductColors from './ProductColor';
+import ProductSizes from './ProductSizes';
 
 const ProductSwiper = () => {
     return (
@@ -42,36 +46,15 @@ const ProductSwiper = () => {
                     </div>
                     <p className="text-[#0E1422] font-bold mt-[24px]">$75.00</p>
                     <div>
-                        <h4 className="text-[#5C5F6A] mt-[32px]">AVAILABLE COLORS</h4>
-                        <div className="flex justify-between w-[116px] mt-[10px]">
-                            <div className="bg-[#A3BEF8] w-[24px] h-[24px] rounded-[100px]"></div>
-                            <div className="bg-[#FFD58A] w-[24px] h-[24px] rounded-[100px]"></div>
-                            <div className="bg-[#83B18B] w-[24px] h-[24px] rounded-[100px]"></div>
-                        </div>
+
                         <div>
-                            <h5 className="text-[#5C5F6A] mt-5">SELECT SIZE</h5>
-                            <div className="flex justify-between w-[232px] h-[40px] mt-3">
-                                <div className="w-[40px] h-[40px] border rounded-[4px] flex justify-center p-2 text-[#5C5F6A] text-[12px]">S</div>
-                                <div className="w-[40px] h-[40px] border rounded-[4px] flex justify-center p-2 text-[#5C5F6A] text-[12px]">M</div>
-                                <div className="w-[40px] h-[40px] border rounded-[4px] flex justify-center p-2 text-[#5C5F6A] text-[12px]">L</div>
-                                <div className="w-[40px] h-[40px] border rounded-[4px] flex justify-center p-2 text-[#5C5F6A] text-[12px]">XL</div>
-                                <div className="w-[40px] h-[40px] border rounded-[4px] flex justify-center p-2 text-[#5C5F6A] text-[12px]">XXL</div>
-                            </div>
-                            <div className="w-[164px] h-[78px] mt-[32px]">
-                                <h3 className="text-[#5C5F6A]">QUANTITY</h3>
-                                <div className="flex justify-between items-center mt-3 w-[164px] h-[44px] pr-[16px] pl-[16px] border-solid border-2 rounded-[4px] border-[#E6E7E8]">
-                                    <button className="text-[#5C5F6A]">
-                                        <img className="w-[20px] j-[20px]" src="/images/minus.svg" alt="remove icon" />
-                                    </button>
-                                    <p className="text-[24px]">1</p>
-                                    <button className="text-[#5C5F6A]">
-                                        <img className="w-[20px] j-[20px]" src="/images/plus.svg" alt="add icon" />
-                                    </button>
-                                </div>
-                            </div>
+                            <ProductColors />
+                            <ProductSizes />
+                            <ProductCounter />
+
                             <div className="flex mt-8 gap-[16px]">
-                                <button className="w-[284px]  rounded-[4px] bg-[#0E1422] text-white">Add to cart</button>
-                                <img className="w-[43] h-[43px]" src="/images/heart.svg" alt="icon heart" />
+                                <button className="w-[284px] rounded-[4px] bg-[#0E1422] text-white hover:scale-110 duration-500">Add to cart</button>
+                                <img className="w-[43] h-[43px] hover:scale-110 duration-500" src="/images/heart.svg" alt="icon heart" />
                             </div>
                             <p className="mt-[12px] text-[#5C5F6A] text-[12px]">— FREE SHIPPING ON ORDERS $100+</p>
                         </div>
