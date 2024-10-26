@@ -14,17 +14,17 @@ const StatisticSL = () => {
                 <p className=' text-[#5C5F6A]'>Total Sales</p>
             </div>
             <div className='px-[32px]'>
-                <div className='flex items-center h-[28px] w-[270px] rounded-[100px] border-2 gap-[8px] mt-[26px]'>
+                <div className='flex items-center h-[28px] w-[270px] rounded-[100px] border-2 gap-[8px] mt-[26px] hover:-translate-y-1 hover:scale-110 duration-500'>
                     <p className='text-[12px]'>Classic Monochrome Tees</p>
                     <p className='text-[12px]'>—</p>
                     <p className='text-[12px] font-semibold'>$940 Sales</p>
                 </div>
-                <div className='flex items-center h-[28px] w-[270px] rounded-[100px] border-2 gap-[8px] mt-[12px]'>
+                <div className='flex items-center h-[28px] w-[270px] rounded-[100px] border-2 gap-[8px] mt-[12px] hover:-translate-y-1 hover:scale-110 duration-500'>
                     <p className='text-[12px]'>Monochromatic Wardrobe</p>
                     <p className='text-[12px]'>—</p>
                     <p className='text-[12px] font-semibold'>$790 Sales</p>
                 </div>
-                <div className='flex items-center h-[28px] w-[270px] rounded-[100px] border-2 gap-[8px] mt-[12px]'>
+                <div className='flex items-center h-[28px] w-[270px] rounded-[100px] border-2 gap-[8px] mt-[12px] hover:-translate-y-1 hover:scale-110 duration-500'>
                     <p className='text-[12px]'>Essential Neutrals</p>
                     <p className='text-[12px]'>—</p>
                     <p className='text-[12px] font-semibold'>$740 Sales</p>

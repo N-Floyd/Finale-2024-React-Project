@@ -8,7 +8,7 @@ const ReviewsDush = () => {
         <img className="w-[24px] h-[24px] " src="/images/rightarrow.svg" alt="" />
         <a className="font-semibold text-[#0E1422]" href='/areviews'>Dashboard</a>
       </div>
-      <img src="/images/orders6.svg" alt="logout icon" />
+      <img className='transition hover:-translate-y-1 hover:scale-110 duration-500' src="/images/orders6.svg" alt="logout icon" />
     </div>
   )
 };

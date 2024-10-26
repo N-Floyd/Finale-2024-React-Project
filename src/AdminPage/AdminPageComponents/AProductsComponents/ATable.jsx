@@ -1,95 +1,101 @@
-import React from 'react'
+import React from 'react';
 
 const ATable = () => {
+  const products = [
+    {
+      name: "Raw Black T-Shirt Lineup",
+      sku: "47514501",
+      price: "$75.00",
+      stock: "In Stock",
+      categories: "T-shirt, Men",
+      img: "/images/a1.png"
+    },
+    {
+      name: "Classic Monochrome Tees",
+      sku: "47514501",
+      price: "$35.00",
+      stock: "In Stock",
+      categories: "T-shirt, Men",
+      img: "/images/a2.png"
+    },
+    {
+      name: "Monochromatic Wardrobe",
+      sku: "47514501",
+      price: "$27.00",
+      stock: "In Stock",
+      categories: "T-shirt",
+      img: "/images/a3.png"
+    },
+    {
+      name: "Essential Neutrals",
+      sku: "47514501",
+      price: "$22.00",
+      stock: "In Stock",
+      categories: "T-shirt, Raw",
+      img: "/images/a4.png"
+    },
+    {
+      name: "UTRAANET Black",
+      sku: "47514501",
+      price: "$43.00",
+      stock: "In Stock",
+      categories: "T-shirt, Trend",
+      img: "/images/a5.png"
+    },
+    {
+      name: "Elegant Ebony Sweatshirts",
+      sku: "47514501",
+      price: "$35.00",
+      stock: "In Stock",
+      categories: "T-shirt",
+      img: "/images/a6.png"
+    },
+    {
+      name: "Sleek and Cozy Black",
+      sku: "47514501",
+      price: "$57.00",
+      stock: "In Stock",
+      categories: "Hoodie",
+      img: "/images/a7.png"
+    },
+    {
+      name: "MOCKUP Black",
+      sku: "47514501",
+      price: "$30.00",
+      stock: "In Stock",
+      categories: "T-shirt",
+      img: "/images/a8.png"
+    },
+  ];
+
   return (
     <table className="mt-[24px] w-[1069px]">
-    <thead className='border-t border-b'>
+      <thead className='border-t border-b'>
         <tr className="text-[#5C5F6A]">
-            <img className='p-2 ml-[50px]' src="/images/a1sort.svg" alt="" />
-            <th className="py-3 px-6 text-left">Name</th>
-            <th className="text-[#5C5F6A] py-3 px-6 text-left">SKU</th>
-            <th className="text-[#5C5F6A] py-3 px-6 text-left">Price</th>
-            <th className="text-[#5C5F6A] py-3 px-6 text-left">Stock</th>
-            <th className="text-[#5C5F6A] py-3 px-6 text-left">Categories</th>
-            <th className="text-[#5C5F6A] py-3 px-6 text-left">Action</th>
+          <th className="py-3 px-6 text-left"><img className='p-2 ml-[40px]' src="/images/a1sort.svg" alt="Sort Icon" /></th>
+          <th className="py-3 px-6 text-left">Name</th>
+          <th className="py-3 px-6 text-left">SKU</th>
+          <th className="py-3 px-6 text-left">Price</th>
+          <th className="py-3 px-6 text-left">Stock</th>
+          <th className="py-3 px-6 text-left">Categories</th>
+          <th className="py-3 px-6 text-left">Action</th>
         </tr>
-    </thead>
-    <tbody className="text-[14px]">
-        <tr className="border-b hover:bg-gray-100">
-            <img className='w-[48px] h-[48px] p-2 ml-[44px]' src="/images/a1.png" alt="" />
-            <td className="text-[#5C5F6A] py-3 px-6">Raw Black T-Shirt Lineup</td>
-            <td className="text-[#5C5F6A] py-3 px-6">47514501</td>
-            <td className="text-[#5C5F6A] py-3 px-6">$75.00</td>
-            <td className="text-[#5C5F6A] py-3 px-6">In Stock</td>
-            <td className="text-[#5C5F6A] py-3 px-6">T-shirt, Men</td>
-            <img className='py-3 px-6 ml-[28px]' src="/images/adots.svg" alt="" />
-        </tr>
-        <tr className="border-b hover:bg-gray-100">
-            <img className='w-[48px] h-[48px] p-2 ml-[44px]' src="/images/a2.png" alt="" />
-            <td className="text-[#5C5F6A] py-3 px-6">Classic Monochrome Tees</td>
-            <td className="text-[#5C5F6A] py-3 px-6">47514501</td>
-            <td className="text-[#5C5F6A] py-3 px-6">$35.00</td>
-            <td className="text-[#5C5F6A] py-3 px-6">In Stock</td>
-            <td className="text-[#5C5F6A] py-3 px-6">T-shirt, Men</td>
-            <img className='py-3 px-6 ml-[28px]' src="/images/adots.svg" alt="" />
-        </tr>
-        <tr className="border-b hover:bg-gray-100">
-            <img className='w-[48px] h-[48px] p-2 ml-[44px]' src="/images/a3 .png" alt="" />
-            <td className="text-[#5C5F6A] py-3 px-6">Monochromatic Wardrobe</td>
-            <td className="text-[#5C5F6A] py-3 px-6">47514501</td>
-            <td className="text-[#5C5F6A] py-3 px-6">$27.00</td>
-            <td className="text-[#5C5F6A] py-3 px-6">In Stock</td>
-            <td className="text-[#5C5F6A] py-3 px-6">T-shirt</td>
-            <img className='py-3 px-6 ml-[28px]' src="/images/adots.svg" alt="" />
-        </tr>
-        <tr className="border-b hover:bg-gray-100">
-            <img className='w-[48px] h-[48px] p-2 ml-[44px]' src="/images/a4.png" alt="" />
-            <td className="text-[#5C5F6A] py-3 px-6">Essential Neutrals</td>
-            <td className="text-[#5C5F6A] py-3 px-6">47514501</td>
-            <td className="text-[#5C5F6A] py-3 px-6">$22.00</td>
-            <td className="text-[#5C5F6A] py-3 px-6">In Stock</td>
-            <td className="text-[#5C5F6A] py-3 px-6">T-shirt, Raw</td>
-            <img className='py-3 px-6 ml-[28px]' src="/images/adots.svg" alt="" />
-        </tr>
-        <tr className="border-b hover:bg-gray-100">
-            <img className='w-[48px] h-[48px] p-2 ml-[44px]' src="/images/a5.png" alt="" />
-            <td className="text-[#5C5F6A] py-3 px-6">UTRAANET Black</td>
-            <td className="text-[#5C5F6A] py-3 px-6">47514501</td>
-            <td className="text-[#5C5F6A] py-3 px-6">$43.00</td>
-            <td className="text-[#5C5F6A] py-3 px-6">In Stock</td>
-            <td className="text-[#5C5F6A] py-3 px-6">T-shirt, Trend</td>
-            <img className='py-3 px-6 ml-[28px]' src="/images/adots.svg" alt="" />
-        </tr>
-        <tr className="border-b hover:bg-gray-100">
-            <img className='w-[48px] h-[48px] p-2 ml-[44px]' src="/images/a6.png" alt="" />
-            <td className="text-[#5C5F6A] py-3 px-6">Elegant Ebony Sweatshirts</td>
-            <td className="text-[#5C5F6A] py-3 px-6">47514501</td>
-            <td className="text-[#5C5F6A] py-3 px-6">$35.00</td>
-            <td className="text-[#5C5F6A] py-3 px-6">In Stock</td>
-            <td className="text-[#5C5F6A] py-3 px-6">T-shirt</td>
-            <img className='py-3 px-6 ml-[28px]' src="/images/adots.svg" alt="" />
-        </tr>
-        <tr className="border-b hover:bg-gray-100">
-            <img className='w-[48px] h-[48px] p-2 ml-[44px]' src="/images/a7.png" alt="" />
-            <td className="text-[#5C5F6A] py-3 px-6">Sleek and Cozy Black</td>
-            <td className="text-[#5C5F6A] py-3 px-6">47514501</td>
-            <td className="text-[#5C5F6A] py-3 px-6">$57.00</td>
-            <td className="text-[#5C5F6A] py-3 px-6">In Stock</td>
-            <td className="text-[#5C5F6A] py-3 px-6">Hoodie</td>
-            <img className='py-3 px-6 ml-[28px]' src="/images/adots.svg" alt="" />
-        </tr>
-        <tr className="hover:bg-gray-100">
-            <img className='w-[48px] h-[48px] p-2 ml-[44px]' src="/images/a8.png" alt="" />
-            <td className="text-[#5C5F6A] py-3 px-6">MOCKUP Black</td>
-            <td className="text-[#5C5F6A] py-3 px-6">47514501</td>
-            <td className="text-[#5C5F6A] py-3 px-6">$30.00</td>
-            <td className="text-[#5C5F6A] py-3 px-6">In Stock</td>
-            <td className="text-[#5C5F6A] py-3 px-6">T-shirt</td>
-            <img className='py-3 px-6 ml-[28px]' src="/images/adots.svg" alt="" />
-        </tr>
-    </tbody>
-</table>
-  )
+      </thead>
+      <tbody className="text-[14px]">
+        {products.map((product, index) => (
+          <tr key={index} className="border-b hover:bg-gray-100 hover:-translate-y-1 hover:scale-110 duration-500">
+            <td className='p-2 ml-[44px]'><img className='w-[48px] h-[48px] ml-[48px]' src={product.img} alt={`${product.name} thumbnail`} /></td>
+            <td className="text-[#5C5F6A] py-3 px-6">{product.name}</td>
+            <td className="text-[#5C5F6A] py-3 px-6">{product.sku}</td>
+            <td className="text-[#5C5F6A] py-3 px-6">{product.price}</td>
+            <td className="text-[#5C5F6A] py-3 px-6">{product.stock}</td>
+            <td className="text-[#5C5F6A] py-3 px-6">{product.categories}</td>
+            <td className='py-3 px-6 ml-[28px]'><img src="/images/adots.svg" alt="Action Icon" /></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
 };
 
 export default ATable;
