@@ -4,7 +4,6 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import ProductCounter from './ProductCounter';
-import ProductSize from './ProductColor';
 import ProductColors from './ProductColor';
 import ProductSizes from './ProductSizes';
 
@@ -16,6 +15,9 @@ const ProductSwiper = () => {
                     <div className="max-w-[534px] h-[574px] bg-[#F6F6F6]">
 
                         <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+                            <SwiperSlide>
+                                <img className="w-[288px] h-[404px] mt-[29px] ml-[123px]" src="/images/shiirt.png" alt="" />
+                            </SwiperSlide>
                             <SwiperSlide>
                                 <img className="w-[288px] h-[404px] mt-[29px] ml-[123px]" src="/images/shiirt.png" alt="" />
                             </SwiperSlide>
