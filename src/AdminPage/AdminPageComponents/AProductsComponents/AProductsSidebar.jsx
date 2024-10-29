@@ -4,7 +4,7 @@ const SidebarProd = [
   { href: 'dashboard', img: '/images/aside1.svg', alt: 'Dashboard icon', text: 'Dashboard' },
   { href: 'aproducts', img: '/images/aside2d.svg', alt: 'products box', text: 'Products', active: true },
   { href: 'aorders', img: '/images/aside3.svg', alt: 'shopping trolley', text: 'Orders' },
-  { href: 'acustumer', img: '/images/aside4.svg', alt: 'account icon', text: 'Custumers' },
+  { href: 'acustumers', img: '/images/aside4.svg', alt: 'account icon', text: 'Custumers' },
   { href: 'areviews', img: '/images/aside5.svg', alt: 'empty star', text: 'Reviews' },
   { href: 'asettings', img: '/images/aside6.svg', alt: 'Settings icon', text: 'Settings' },
 ];

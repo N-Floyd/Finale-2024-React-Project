@@ -6,7 +6,7 @@ const YourCart = () => {
         <div>
             <div className='flex justify-between items-center max-w-[1116px] m-auto mt-[56px]'>
                 <div>
-                    <div className=''>
+                    <div>
                         <h5 className='text-[#0E1422] font-bold mt-[16px]'>Your cart</h5>
                         <hr className='mt-[18px] w-[628px]'></hr>
                     </div>
