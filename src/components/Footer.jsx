@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
     return (
         <div>
@@ -9,9 +11,9 @@ const Footer = () => {
                             DevCut is a YouTube channel for practical project-based learning.
                         </p>
                         <div className="flex justify-between w-[120px] mt-[32px]">
-                            <a className="transition hover:scale-110 hover:-translate-y-1 duration-500" href="https://github.com/"><img src="/images/githubicon.svg" alt="github icon" /></a>
-                            <a className="transition hover:scale-110 hover:-translate-y-1 duration-500" href="https://www.instagram.com/"><img src="/images/instaicon.svg" alt="instagram icon" /></a>
-                            <a className="transition hover:scale-110 hover:-translate-y-1 duration-500" href="https://www.youtube.com/"><img src="/images/youtubeicon.svg" alt="youtube icon" /></a>
+                            <Link to="https://github.com/" className="transition hover:scale-110 hover:-translate-y-1 duration-500"><img src="/images/githubicon.svg" alt="github icon" /></Link>
+                            <Link to="https://www.instagram.com/" className="transition hover:scale-110 hover:-translate-y-1 duration-500"><img src="/images/instaicon.svg" alt="instagram icon" /></Link>
+                            <Link to="https://www.youtube.com/" className="transition hover:scale-110 hover:-translate-y-1 duration-500"><img src="/images/youtubeicon.svg" alt="youtube icon" /></Link>
                         </div>
                     </div>
                     <div className="grid grid-row-3 grid-flow-col gap-16 mt-10">

@@ -1,12 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const SidebarProd = [
-  { href: 'dashboard', img: '/images/aside1.svg', alt: 'Dashboard icon', text: 'Dashboard' },
-  { href: 'aproducts', img: '/images/aside2d.svg', alt: 'products box', text: 'Products' },
-  { href: 'aorders', img: '/images/aside3.svg', alt: 'shopping trolley', text: 'Orders', active: true },
-  { href: 'acustumers', img: '/images/aside4.svg', alt: 'account icon', text: 'Custumers' },
-  { href: 'areviews', img: '/images/aside5.svg', alt: 'empty star', text: 'Reviews' },
-  { href: 'asettings', img: '/images/aside6.svg', alt: 'Settings icon', text: 'Settings' },
+  { to: '/dashboard', img: '/images/aside1.svg', alt: 'Dashboard icon', text: 'Dashboard' },
+  { to: '/aproducts', img: '/images/aside2d.svg', alt: 'products box', text: 'Products' },
+  { to: '/aorders', img: '/images/aside3.svg', alt: 'shopping trolley', text: 'Orders', active: true },
+  { to: '/acustumers', img: '/images/aside4.svg', alt: 'account icon', text: 'Custumers' },
+  { to: '/areviews', img: '/images/aside5.svg', alt: 'empty star', text: 'Reviews' },
+  { to: '/asettings', img: '/images/aside6.svg', alt: 'Settings icon', text: 'Settings' },
 ];
 
 const AordersSidebar = () => {
@@ -22,7 +23,7 @@ const AordersSidebar = () => {
           {SidebarProd.map((link, index) => (
             <div key={index} className={`flex gap-[10px] rounded-[8px] px-[24px] py-[8px] mt-[${index === 0 ? '60' : '16'}px] hover:scale-110 hover:-translate-y-1 duration-500 ${link.active ? 'bg-[#F6F6F6]' : ''}`}>
               <img className='w-[24px] h-[24px]' src={link.img} alt={link.alt} />
-              <a className={`text-[#${link.active ? '0E1422' : '5C5F6A'}] font-semibold`} href={link.href}> {link.text} </a>
+              <Link className={`text-[#${link.active ? '0E1422' : '5C5F6A'}] font-semibold`} to={link.to}> {link.text} </Link>
             </div>
           ))}
         </div>

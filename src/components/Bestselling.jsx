@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Bestselling = () => {
 
     const products = [
@@ -39,20 +41,23 @@ const Bestselling = () => {
             <div className='flex justify-between max-w-[1116px] m-auto mt-[80px]'>
                 {products.map((product, index) => (
                     <div key={index}>
-                        <div className="w-60 h-80 bg-neutral-100 rounded cursor-pointer transition hover:scale-110 duration-500">
-                            <img src={product.img} />
-                        </div>
-                        <div>
-                            <p className="font-medium text-sm mt-3">
-                                {product.title}
-                            </p>
-                            <div className="flex items-center mt-2">
-                                <button className="bg-white text-center w-20 h-7 rounded-full border text-xs font-medium mt-3 items-center">
-                                    {product.stock}
-                                </button>
-                                <div className="mt-3 ml-2 font-normal text-sm text-center">{product.price}</div>
+                        <Link to="/product">
+                            <div className="w-60 h-80 bg-neutral-100 rounded cursor-pointer transition hover:scale-110 duration-500">
+                                <img src={product.img} />
                             </div>
-                        </div>
+                            <div>
+                                <p className="font-medium text-sm mt-3">
+                                    {product.title}
+                                </p>
+                                <div className="flex items-center mt-2">
+                                    <button className="bg-white text-center w-20 h-7 rounded-full border text-xs font-medium mt-3 items-center">
+                                        {product.stock}
+                                    </button>
+                                    <div className="mt-3 ml-2 font-normal text-sm text-center">{product.price}</div>
+                                </div>
+                            </div>
+                        </Link>
+
                     </div>
                 ))}
             </div>

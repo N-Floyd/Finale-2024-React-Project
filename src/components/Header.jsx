@@ -61,7 +61,7 @@ const Header = () => {
           <Link to="/cart" className="transition hover:-translate-y-1 hover:scale-110 duration-500 rounded-[5px]">
             <img className='w-[18px] h-[18px] mt-[12px]' src="/images/iconbask.svg" alt="basket icon" />
           </Link>
-          <Link to="/adminLogin" className="transition hover:-translate-y-1 hover:scale-110 duration-500 rounded-[5px]">
+          <Link to="/login" className="transition hover:-translate-y-1 hover:scale-110 duration-500 rounded-[5px]">
             <img className='w-[19px] h-[19px] mt-[12px]' src="/images/user.svg" alt="user icon" />
           </Link>
         </div>

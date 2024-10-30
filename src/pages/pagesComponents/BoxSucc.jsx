@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const BoxSucc = () => {
     return (
@@ -14,10 +15,10 @@ const BoxSucc = () => {
             </div>
             <div className='flex justify-center mt-[48px]'>
                 <div>
-                    <a href='#' className="bg-[#0E1422] flex justify-center rounded-[4px] w-[196px] h-[44px] gap-[6px] hover:scale-110 duration-500">
+                    <Link to="/login" className="bg-[#0E1422] flex justify-center rounded-[4px] w-[196px] h-[44px] gap-[6px] hover:scale-110 duration-500">
                         <button className="text-[#FFFFFF]">Go to my account</button>
                         <img className='w-[24px]' src="/images/arrow.svg" alt="arrow icon" />
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

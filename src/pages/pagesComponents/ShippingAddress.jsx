@@ -1,5 +1,6 @@
 import React from 'react'
 import ShippAddress from './ShippAdress';
+import { Link } from 'react-router-dom';
 
 const ShippingAddress = () => {
     return (
@@ -14,7 +15,7 @@ const ShippingAddress = () => {
                         <img className='w-[40px] h-[40px] transition hover:scale-110 hover:-translate-y-1 duration-500' src="/images/check2.svg" alt="" />
                         <img className='w-[40px] h-[40px] transition hover:scale-110 hover:-translate-y-1 duration-500' src="/images/check3.svg" alt="" />
                     </div>
-                    <a href="cart"><button className='w-[107px] h-[44px] border border-1 rounded-[4px] text-[#5C5F6A] hover:scale-110 hover:-translate-y-1 duration-500'>Edit Cart</button></a>
+                    <Link to="/cart"><button className='w-[107px] h-[44px] border border-1 rounded-[4px] text-[#5C5F6A] hover:scale-110 hover:-translate-y-1 duration-500'>Edit Cart</button></Link>
                 </div>
                 <div>
                     <div className='flex justify-between mt-[64px]'>
@@ -35,7 +36,7 @@ const ShippingAddress = () => {
                     <p className='text-[#0E1422] font-semibold'>Total</p>
                     <p className='text-[#0E1422] font-semibold'>$ 78.00</p>
                 </div>
-                <a href="#"><button className='w-[372px] h-[44px] rounded-[4px] bg-[#0E1422] text-white mt-[24px] hover:scale-110 duration-500' type="submit" value="Submit">Place Order</button></a>
+                <Link to="/orders"><button className='w-[372px] h-[44px] rounded-[4px] bg-[#0E1422] text-white mt-[24px] hover:scale-110 duration-500' type="submit" value="Submit">Place Order</button></Link>
             </div>
         </div>
     )

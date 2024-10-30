@@ -48,7 +48,7 @@ function App() {
         <Route path='/details' element={<Details />} />
         <Route path='/password' element={<Password />} />
         <Route path='/startShop' element={<StartShop />} />
-        <Route path='/adminLogin' element={<AdminLogin />} />
+        <Route path='/admilLogin' element={<AdminLogin />} />
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/aproducts' element={<AProducts />} />
         <Route path='/addproducts' element={<AddProducts />} />
