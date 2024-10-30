@@ -7,6 +7,11 @@ const CartCounter = () => {
         setCount(count + 1);
     };
     const minus = () => {
+
+        if (count === 1) {
+            return null
+        }
+        
         setCount(count - 1);
     };
     return (

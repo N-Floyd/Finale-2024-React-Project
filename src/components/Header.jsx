@@ -1,5 +1,6 @@
-import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/16/solid'
+import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
+import { ChevronDownIcon } from '@heroicons/react/16/solid';
+import { Link } from 'react-router-dom';
 
 
 
@@ -15,7 +16,7 @@ const Header = () => {
         <div className='mt-[10px] text-[#5C5F6A]'>
           <ul className='flex gap-[32px]'>
             <li className="transition hover:scale-110 hover:-translate-y-1 duration-500">
-              <a href="/">Home</a>
+             <Link to="/">Home</Link>
             </li>
             <li className="relative flex gap-[8px] transition hover:-translate-y-1 hover:scale-110 duration-500">
               <Menu as="div" className="relative">
@@ -25,23 +26,23 @@ const Header = () => {
 
                 <MenuItems className="absolute right-0 z-10 mt-2 w-48 origin-top-right bg-white border border-gray-300 rounded-md shadow-lg focus:outline-none">
                   <MenuItem>
-                    <a href="#" className='block px-4 py-2 text-sm bg-gray-100 text-gray-700'>Categories 1 </a>
+                    <Link to="/category1" className='block px-4 py-2 text-sm bg-gray-100 text-gray-700'>Categories 1</Link>
                   </MenuItem>
                   <MenuItem>
-                    <a href="#" className='block px-4 py-2 text-sm bg-gray-100 text-gray-700'>Categories 2 </a>
+                    <Link to="/category1" className='block px-4 py-2 text-sm bg-gray-100 text-gray-700'>Categories 2</Link>
                   </MenuItem>
                   <MenuItem>
-                    <a href="#" className='block px-4 py-2 text-sm bg-gray-100 text-gray-700'>Categories 3 </a>
+                    <Link to="/category1" className='block px-4 py-2 text-sm bg-gray-100 text-gray-700'>Categories 3</Link>
                   </MenuItem>
 
                 </MenuItems>
               </Menu>
             </li>
             <li className="transition hover:-translate-y-1 hover:scale-110 duration-500 rounded-[5px]">
-              <a href="#">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li className="transition hover:-translate-y-1 hover:scale-110 duration-500 rounded-[5px]">
-              <a href="#">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
@@ -57,8 +58,12 @@ const Header = () => {
         </div>
 
         <div className='flex gap-5'>
-          <a href="#" className="transition hover:-translate-y-1 hover:scale-110 duration-500 rounded-[5px]"><img className='w-[18px] h-[18px] mt-[12px]' src="/images/iconbask.svg" alt="basket icon" /></a>
-          <a href="#" className="transition hover:-translate-y-1 hover:scale-110 duration-500 rounded-[5px]"><img className='w-[19px] h-[19px] mt-[12px]' src="/images/user.svg" alt="user icon" /></a>
+          <Link to="/cart" className="transition hover:-translate-y-1 hover:scale-110 duration-500 rounded-[5px]">
+            <img className='w-[18px] h-[18px] mt-[12px]' src="/images/iconbask.svg" alt="basket icon" />
+          </Link>
+          <Link to="/adminLogin" className="transition hover:-translate-y-1 hover:scale-110 duration-500 rounded-[5px]">
+            <img className='w-[19px] h-[19px] mt-[12px]' src="/images/user.svg" alt="user icon" />
+          </Link>
         </div>
       </div>
     </div>

@@ -28,7 +28,7 @@ const YourCart = () => {
                                 <p className='font-semibold mt-2'>$75.00</p>
                             <CartCounter />
                             </div>
-                            <img className='w-[40px] h-[40px] transition hover:scale-110 hover:-translate-y-1 duration-500' src="/images/cartx.svg" alt="remove icon" />
+                            <a href="#"><img className='w-[40px] h-[40px] transition hover:scale-110 hover:-translate-y-1 duration-500' src="/images/cartx.svg" alt="remove icon" /></a>
                         </div>
                     </div>
                     <div className='flex justify-between mt-[40px]'>
