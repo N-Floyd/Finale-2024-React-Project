@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const AsideOrders = [
     { to: '/orders', img: '/images/orders1d.svg', alt: 'shopping trolley', text: 'Orders', active: true},
     { to: '/wishlist', img: '/images/orders2.svg', alt: 'heart', text: 'Wishlist'},
-    { to: '/adress', img: '/images/orders3.svg', alt: 'shippings car', text: 'Adress'},
+    { to: '/address', img: '/images/orders3d.svg', alt: 'shippings car', text: 'Address'},
     { to: '/password', img: '/images/orders4.svg', alt: 'key', text: 'Password'},
     { to: '/accdetail', img: '/images/orders5.svg', alt: 'account icon', text: 'Account Detail'},
     { to: '/logout', img: '/images/orders6.svg', alt: 'logout icon', text: 'Logout'},

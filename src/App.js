@@ -13,7 +13,7 @@ import ForgotP from './pages/ForgotP';
 import ResetP from './pages/ResetP';
 import Orders from './pages/Orders';
 import Wishlist from './pages/Wishlist';
-import Adress from './pages/Adress';
+import Address from './pages/Address';
 import Details from './pages/Details';
 import Password from './pages/Password';
 import StartShop from './pages/StartShop';
@@ -25,6 +25,7 @@ import AOrders from './AdminPage/AOrders';
 import ACustumers from './AdminPage/ACustumers';
 import AReviews from './AdminPage/AReviews';
 import ASettings from './AdminPage/ASettings';
+import AccountDetails from './pages/pagesComponents/AccountDetails';
 
 
 function App() {
@@ -44,7 +45,7 @@ function App() {
         <Route path="/resetP" element={<ResetP />} />
         <Route path='/orders' element={<Orders />} />
         <Route path='/wishlist' element={<Wishlist />} />
-        <Route path='/adress' element={<Adress />} />
+        <Route path='/address' element={<Address />} />
         <Route path='/details' element={<Details />} />
         <Route path='/password' element={<Password />} />
         <Route path='/startShop' element={<StartShop />} />
@@ -56,6 +57,7 @@ function App() {
         <Route path='/acustumers' element={<ACustumers />} />
         <Route path='/areviews' element={<AReviews />} />
         <Route path='/asettings' element={<ASettings />} />
+        <Route path='/accdetail' element={<AccountDetails />} />
       </Routes>
     </div>
   );

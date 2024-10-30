@@ -5,7 +5,7 @@ import MyAccount from './pagesComponents/MyAccount';
 import AdressShipping from './pagesComponents/AdressShipping';
 import FooterBG from './pagesComponents/FooterBG';
 
-const Adress = () => {
+const Address = () => {
   return (
     <div>
         <Discount />
@@ -17,4 +17,4 @@ const Adress = () => {
   )
 };
 
-export default Adress;
+export default Address;
