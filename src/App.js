@@ -26,6 +26,8 @@ import ACustumers from './AdminPage/ACustumers';
 import AReviews from './AdminPage/AReviews';
 import ASettings from './AdminPage/ASettings';
 import AccountDetails from './pages/pagesComponents/AccountDetails';
+import Bestselling from './components/Bestselling';
+import ProductSwiper from './pages/pagesComponents/ProductSwiper';
 
 
 function App() {
@@ -34,22 +36,23 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/product" element={<Product />} />
+        <Route path="/product/:id" element={<Product />} />
         <Route path="/listing" element={<Listing />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
-        <Route path="/afterPaymentS" element={<AfterPaymentS />} />
-        <Route path="/afterPaymentF" element={<AfterPaymentF />} />
+        <Route path="/afterpayments" element={<AfterPaymentS />} />
+        <Route path="/afterpaymentf" element={<AfterPaymentF />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/signUp" element={<SignUp />} />
-        <Route path="/forgotP" element={<ForgotP />} />
-        <Route path="/resetP" element={<ResetP />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/forgotp" element={<ForgotP />} />
+        <Route path="/resetp" element={<ResetP />} />
         <Route path='/orders' element={<Orders />} />
         <Route path='/wishlist' element={<Wishlist />} />
         <Route path='/address' element={<Address />} />
         <Route path='/details' element={<Details />} />
         <Route path='/password' element={<Password />} />
-        <Route path='/startShop' element={<StartShop />} />
-        <Route path='/admilLogin' element={<AdminLogin />} />
+        <Route path='/startshop' element={<StartShop />} />
+        <Route path='/admillogin' element={<AdminLogin />} />
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/aproducts' element={<AProducts />} />
         <Route path='/addproducts' element={<AddProducts />} />
@@ -58,6 +61,9 @@ function App() {
         <Route path='/areviews' element={<AReviews />} />
         <Route path='/asettings' element={<ASettings />} />
         <Route path='/accdetail' element={<AccountDetails />} />
+        <Route path="/bestselling" element={<Bestselling /> } />
+        <Route path="/productswiper" element={<ProductSwiper /> } />
+        <Route path="/productswiper/:id" element={<ProductSwiper />} />
       </Routes>
     </div>
   );

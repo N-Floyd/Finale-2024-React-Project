@@ -1,36 +1,28 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 import React from 'react'
-import Cart from '../Cart';
 
 const SimilarProducts = () => {
-    const products = [
-        {
-            img: "/images/shirt1.png",
-            title: "Classic Monochrome Tees",
-            stock: "IN STOCK",
-            price: "$35.00",
-        },
+    const [products, setProducts] = useState([]);
 
-        {
-            img: "/images/shirt2.png",
-            title: "Monochromatic Wardrobe",
-            stock: "IN STOCK",
-            price: "$27.00",
-        },
-        {
-            img: "/images/shirt3.png",
-            title: "Essential Neutrals",
-            stock: "IN STOCK",
-            price: "$22.00",
-        },
-        {
-            img: "/images/shirt4.png",
-            title: "UTRAANET Black",
-            stock: "IN STOCK",
-            price: "$43.00",
+    const fetchProducts = async () => {
+        try {
+            const res = await fetch('https://fakestoreapi.com/products');
+            if (!res.ok) {
+                throw new Error('Network response was not ok');
+            }
+            const data = await res.json();
+
+            setProducts(data);
+        } catch (error) {
+            console.error(error);
         }
-    ]
+    };
+    useState(() => {
+    fetchProducts();
+    }, []);
+
   return (
     <div>
         <div>
@@ -43,21 +35,21 @@ const SimilarProducts = () => {
 
             <div className='flex justify-between max-w-[1116px] m-auto mt-[56px]'>
 
-            {products.map((product, index) => (
+            {products.slice(12, 16).map((product, index) => (
                     <div key={index}>
-                        <Link to="/product">
-                            <div className="w-60 h-80 bg-neutral-100 rounded cursor-pointer transition hover:scale-110 duration-500">
-                                <img src={product.img} />
+                        <Link key={product.id} to={`/productswiper/${product.id}`}>
+                            <div className="cursor-pointer transition hover:scale-110 duration-500 hover:animate-bounce">
+                                <img className='w-[248px] h-[312px] px-5 py-5' src={product.image} />
                             </div>
                             <div>
-                                <p className="font-medium text-sm mt-3">
+                                <p className="font-medium text-sm mt-3 w-[248px] h-[40px]">
                                     {product.title}
                                 </p>
-                                <div className="flex items-center mt-2">
-                                    <button className="bg-white text-center w-20 h-7 rounded-full border text-xs font-medium mt-3 items-center">
-                                        {product.stock}
+                                <div className="flex items-center mt-10 gap-[16px]">
+                                    <button className="text-center w-20 h-7 rounded-full border text-xs font-medium mt-3 items-center">
+                                        IN STOCK{product.stock}
                                     </button>
-                                    <div className="mt-3 ml-2 font-normal text-sm text-center">{product.price}</div>
+                                    <div className="mt-3 ml-2 font-normal text-sm text-center">${product.price}</div>
                                 </div>
                             </div></Link>
                     </div>

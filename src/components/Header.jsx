@@ -1,22 +1,55 @@
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/16/solid';
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 
 const Header = () => {
 
+  const [categories, setCategories] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
+
+
+  const handleCategoryClick = (e) => {
+
+    setLoading(true);
+
+    fetch('https://fakestoreapi.com/products/categories')
+      .then((res) => res.json())
+      .then((json) => {
+        setCategories(json);
+        console.log(json);
+        setLoading(false);
+      })
+
+      .catch((err) => {
+        console.error("Network response was not ok");
+        setLoading(false);
+      });
+  };
+
+
+  useEffect(() => {
+    handleCategoryClick()
+  }, [])
+
+
+
   return (
     <div className="flex justify-between items-center max-w-[1116px] py-8 m-auto">
       <div className=' flex gap-[103px]'>
         <div className='w-[163px]'>
-          <img src="/images/logoeco.png" alt="logo" />
+          <Link to="/">
+            <img className='transition hover:scale-110 hover:-translate-y-1 duration-500' src="/images/logoeco.png" alt="logo" />
+          </Link>
         </div>
 
         <div className='mt-[10px] text-[#5C5F6A]'>
           <ul className='flex gap-[32px]'>
             <li className="transition hover:scale-110 hover:-translate-y-1 duration-500">
-             <Link to="/">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li className="relative flex gap-[8px]">
               <Menu as="div" className="relative">
@@ -25,16 +58,13 @@ const Header = () => {
                 </MenuButton>
 
                 <MenuItems className="absolute right-0 z-50 mt-2 w-48 origin-top-right bg-white border border-gray-300 rounded-md shadow-lg focus:outline-none">
-                  <MenuItem>
-                    <Link to="/category1" className='block px-4 py-2 text-sm bg-gray-100 text-gray-700'>Categories 1</Link>
-                  </MenuItem>
-                  <MenuItem>
-                    <Link to="/category1" className='block px-4 py-2 text-sm bg-gray-100 text-gray-700'>Categories 2</Link>
-                  </MenuItem>
-                  <MenuItem>
-                    <Link to="/category1" className='block px-4 py-2 text-sm bg-gray-100 text-gray-700'>Categories 3</Link>
-                  </MenuItem>
 
+                  {categories.map((category, key) => (
+                    <MenuItem>
+                      <Link to="/category1" onClick={handleCategoryClick} className='block px-4 py-2 text-sm bg-gray-100 text-gray-700'>{category}</Link>
+                    </MenuItem>
+                  ))}
+                  
                 </MenuItems>
               </Menu>
             </li>

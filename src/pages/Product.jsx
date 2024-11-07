@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Discount from "../components/Discount";
 import Header from "../components/Header";
 import Footer from "../components/Footer"
@@ -12,18 +12,19 @@ import FooterF from "../components/FooterF";
 
 
 const Product = () => {
-    return (
-        <div>
-            <Discount />
-            <Header />
-            <BlackManTshirt />
-            <ProductSwiper />
-            <Reviews />
-            <SimilarProducts />
-            <FooterF />
-            <Footer />
-        </div>
-    )
+
+  return (
+    <div>
+      <Discount />
+      <Header />
+      <BlackManTshirt />
+      <ProductSwiper />
+      <Reviews />
+      <SimilarProducts />
+      <FooterF />
+      <Footer />
+    </div>
+  )
 };
 
 export default Product;

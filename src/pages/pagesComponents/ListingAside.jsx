@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import ListingAsideCategory from './ListingAsideCategory';
 import ListingColor from './ListingColor';
 import ListingSizes from './ListingSizes';
 
 const ListingAside = () => {
+
     return (
         <aside className="h-[828px] border-2 border-[#E6E7E8] rounded-[6px] px-4">
             <div>
