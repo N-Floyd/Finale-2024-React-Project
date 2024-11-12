@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ListingAsideCategory = () => {
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setLoading(true);
@@ -21,6 +23,10 @@ const ListingAsideCategory = () => {
 
   }, []);
 
+  const handleCategorySelect = (category) => {
+    navigate(`/category/${category}`);
+  };
+
   if (loading) {
     return <div>Loading categories...</div>;
   }
@@ -30,8 +36,8 @@ const ListingAsideCategory = () => {
       {categories.length > 0 ? (
         categories.map((category, index) => (
           <div key={index} className="border-b-[1px] flex gap-[10px] px-[4px] py-[12px] transition hover:scale-110 hover:-translate-y-1 duration-500">
-            <input className='cursor-pointer' type="checkbox" id={category} />
-            <label className='cursor-pointer' html={category}>{category}</label>
+            <input className="cursor-pointer" type="checkbox" id={category} onClick={() => handleCategorySelect(category)} />
+            <label className="cursor-pointer" htmlFor={category}> {category} </label>
           </div>
         ))
       ) : (

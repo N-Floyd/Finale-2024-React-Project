@@ -12,7 +12,7 @@ const Header = () => {
   const navigate = useNavigate();
 
 
-  const handleCategoryClick = (e) => {
+  const handleCategoryClick = () => {
 
     setLoading(true);
 
@@ -20,7 +20,6 @@ const Header = () => {
       .then((res) => res.json())
       .then((json) => {
         setCategories(json);
-        console.log(json);
         setLoading(false);
       })
 
@@ -33,7 +32,11 @@ const Header = () => {
 
   useEffect(() => {
     handleCategoryClick()
-  }, [])
+  }, []);
+
+  const handleCategorySelect = (category) => {
+    navigate(`/category/${category}`);
+  };
 
 
 
@@ -58,13 +61,11 @@ const Header = () => {
                 </MenuButton>
 
                 <MenuItems className="absolute right-0 z-50 mt-2 w-48 origin-top-right bg-white border border-gray-300 rounded-md shadow-lg focus:outline-none">
-
                   {categories.map((category, key) => (
-                    <MenuItem>
-                      <Link to="/category1" onClick={handleCategoryClick} className='block px-4 py-2 text-sm bg-gray-100 text-gray-700'>{category}</Link>
+                    <MenuItem key={key}>
+                      <button onClick={() => handleCategorySelect(category)} className="block px-4 py-2 text-sm bg-gray-100 text-gray-700" > {category} </button>
                     </MenuItem>
                   ))}
-                  
                 </MenuItems>
               </Menu>
             </li>

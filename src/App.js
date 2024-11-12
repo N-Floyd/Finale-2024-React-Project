@@ -28,6 +28,8 @@ import ASettings from './AdminPage/ASettings';
 import AccountDetails from './pages/pagesComponents/AccountDetails';
 import Bestselling from './components/Bestselling';
 import ProductSwiper from './pages/pagesComponents/ProductSwiper';
+import ListingAsideCategory from './pages/pagesComponents/ListingAsideCategory';
+import ListingCategoryProducts from './pages/pagesComponents/ListingCategoryProducts';
 
 
 function App() {
@@ -64,6 +66,9 @@ function App() {
         <Route path="/bestselling" element={<Bestselling /> } />
         <Route path="/productswiper" element={<ProductSwiper /> } />
         <Route path="/productswiper/:id" element={<ProductSwiper />} />
+        <Route path="/listingasidecategory" element={<ListingAsideCategory /> } />
+        <Route path="/listingcategoryproducts" element={<ListingCategoryProducts /> } />
+        <Route path="/category/:categoryName" element={<ListingCategoryProducts />}/>
 
       </Routes>
     </div>
