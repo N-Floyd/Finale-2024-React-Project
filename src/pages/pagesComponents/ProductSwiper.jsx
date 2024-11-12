@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
 import ProductCounter from './ProductCounter';
 import ProductColors from './ProductColor';
 import ProductSizes from './ProductSizes';
@@ -50,7 +49,7 @@ const ProductSwiper = () => {
                 <div>
                     <div className="max-w-[534px] h-[574px] bg-[#F6F6F6]">
 
-                        <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+                        <Swiper pagination={true} className="mySwiper">
                             <SwiperSlide>
                                 <img className="w-[288px] h-[404px] mt-[29px] ml-[123px]" src={productDetails.image} alt={productDetails.title} />
                             </SwiperSlide>

@@ -35,7 +35,7 @@ const Bestselling = () => {
 
             <div className='flex justify-between max-w-[1116px] m-auto mt-[80px]'>
                 {products.map((product) => (
-                    <Link key={product.id} to={`/productswiper/${product.id}`}>
+                    <Link key={product.id} to={`/product/${product.id}`}>
                         <div className="cursor-pointer transition hover:scale-110 duration-500 hover:animate-bounce">
                             <img className='w-[248px] h-[312px] px-5 py-5' src={product.image} />
                         </div>

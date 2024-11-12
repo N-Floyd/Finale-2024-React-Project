@@ -25,7 +25,7 @@ const FilterGrid = () => {
         <div class="grid grid-rows-3 grid-flow-col gap-[24px] max-w-[1116px] mt-[16px]">
             {products.slice(1, 10).map((productlist, index) => (
                 <div key={index}>
-                    <Link key={productlist.id} to={`/productswiper/${productlist.id}`}>
+                    <Link key={productlist.id} to={`/product/${productlist.id}`}>
                         <div className="cursor-pointer transition hover:scale-110 duration-500 hover:animate-bounce">
                             <img className='w-[248px] h-[312px] px-5 py-5' src={productlist.image} />
                         </div>

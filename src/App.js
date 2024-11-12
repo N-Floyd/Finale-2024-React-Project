@@ -64,6 +64,7 @@ function App() {
         <Route path="/bestselling" element={<Bestselling /> } />
         <Route path="/productswiper" element={<ProductSwiper /> } />
         <Route path="/productswiper/:id" element={<ProductSwiper />} />
+
       </Routes>
     </div>
   );
