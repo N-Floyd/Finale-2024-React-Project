@@ -3,8 +3,6 @@ import { ChevronDownIcon } from '@heroicons/react/16/solid';
 import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
-
-
 const Header = () => {
 
   const [categories, setCategories] = useState([]);
@@ -63,7 +61,7 @@ const Header = () => {
                 <MenuItems className="absolute right-0 z-50 mt-2 w-48 origin-top-right bg-white border border-gray-300 rounded-md shadow-lg focus:outline-none">
                   {categories.map((category, key) => (
                     <MenuItem key={key}>
-                      <button onClick={() => handleCategorySelect(category)} className="block px-4 py-2 text-sm bg-gray-100 text-gray-700" > {category} </button>
+                      <button onClick={() => handleCategorySelect(category)} className="block px-4 py-2 text-sm text-gray-700" > {category} </button>
                     </MenuItem>
                   ))}
                 </MenuItems>

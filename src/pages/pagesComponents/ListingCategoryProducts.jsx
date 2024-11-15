@@ -30,11 +30,11 @@ const ListingCategoryProducts = () => {
       <div className="grid grid-cols-3 gap-4">
         {products.length > 0 ? (
           products.map((product) => (
-            <div key={product.id} className="border p-4">
-              <img src={product.image} alt={product.title} />
-              <h2>{product.title}</h2>
-              <p>{product.description}</p>
-              <p>${product.price}</p>
+            <div key={product.id} className="border p-4 cursor-pointer transition hover:scale-110 duration-500">
+              <img className='w-[248px] h-[312px] px-5 py-5' src={product.image} alt={product.title} />
+              <h2 className="font-medium text-sm mt-3 w-[248px] h-[40px]">{product.title}</h2>
+              <p className='mt-7 h-[110px]'>{product.description}</p>
+              <p className='font-semibold'>${product.price}</p>
             </div>
           ))
         ) : (

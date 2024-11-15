@@ -29,8 +29,7 @@ import AccountDetails from './pages/pagesComponents/AccountDetails';
 import Bestselling from './components/Bestselling';
 import ProductSwiper from './pages/pagesComponents/ProductSwiper';
 import ListingAsideCategory from './pages/pagesComponents/ListingAsideCategory';
-import ListingCategoryProducts from './pages/pagesComponents/ListingCategoryProducts';
-
+import FilterGrid from './pages/pagesComponents/FilterGrid';
 
 function App() {
   return (
@@ -40,6 +39,7 @@ function App() {
         <Route path="/product" element={<Product />} />
         <Route path="/product/:id" element={<Product />} />
         <Route path="/listing" element={<Listing />} />
+        <Route path="/listing/:category_id" element={<Listing />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/afterpayments" element={<AfterPaymentS />} />
@@ -54,7 +54,7 @@ function App() {
         <Route path='/details' element={<Details />} />
         <Route path='/password' element={<Password />} />
         <Route path='/startshop' element={<StartShop />} />
-        <Route path='/admillogin' element={<AdminLogin />} />
+        <Route path='/adminlogin' element={<AdminLogin />} />
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/aproducts' element={<AProducts />} />
         <Route path='/addproducts' element={<AddProducts />} />
@@ -67,9 +67,9 @@ function App() {
         <Route path="/productswiper" element={<ProductSwiper /> } />
         <Route path="/productswiper/:id" element={<ProductSwiper />} />
         <Route path="/listingasidecategory" element={<ListingAsideCategory /> } />
-        <Route path="/listingcategoryproducts" element={<ListingCategoryProducts /> } />
-        <Route path="/category/:categoryName" element={<ListingCategoryProducts />}/>
-
+        <Route path='/filtergrid' element={<FilterGrid />} />
+        <Route path='/filtergrid/:category_id' element={<FilterGrid />} />
+        
       </Routes>
     </div>
   );
