@@ -33,7 +33,7 @@ const Header = () => {
   }, []);
 
   const handleCategorySelect = (category) => {
-    navigate(`/category/${category}`);
+    navigate(`/listing/${category}`);
   };
 
 

@@ -68,7 +68,7 @@ function App() {
         <Route path="/productswiper/:id" element={<ProductSwiper />} />
         <Route path="/listingasidecategory" element={<ListingAsideCategory /> } />
         <Route path='/filtergrid' element={<FilterGrid />} />
-        <Route path='/filtergrid/:category_id' element={<FilterGrid />} />
+        <Route path='/category/:category_id' element={<FilterGrid />} />
         
       </Routes>
     </div>
