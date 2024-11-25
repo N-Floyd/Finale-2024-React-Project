@@ -1,26 +1,52 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import CartCounter from './CartCounter';
 
-const cartItems = [
-    {
-        img: "/images/cartshirt1.png",
-        alt: "Black T-Shirt",
-        title: "Raw Black T-Shirt Lineup",
-        color: "#98BE9E",
-        size: "M",
-        price: "$75.00",
-    },
-    {
-        img: "/images/cartshirt2.png",
-        alt: "White T-Shirt",
-        title: "Raw Black T-Shirt Lineup",
-        color: "#A8B2FF",
-        size: "M",
-        price: "$22.00",
-    },
-];
+
+
 
 const YourCart = () => {
+    const [products, setProducts] = useState([])
+    const [isLoading, setIsLoading] = useState(false)
+
+    const getAllProductsAndUserCart = async () => {
+        setIsLoading(true)
+        try {
+            // Fetching products
+            const products_res = await fetch('https://fakestoreapi.com/products')
+            const products_data = await products_res.json()
+            
+
+            // Fetching user cart
+            const cart_res = await fetch('https://fakestoreapi.com/carts/3')
+            const cart_products = await cart_res.json()
+
+
+            let cart_products_data = []
+
+            for (let index = 0; index < cart_products.products.length; index++) {
+                const element = cart_products.products[index];
+
+                products_data.find((product) => {
+                    if (product.id === element.productId) {
+                        cart_products_data.push(product)
+                    }
+                })
+            }
+
+            setProducts(cart_products_data)
+
+        } catch (error) {
+            console.log(error)
+        }finally {
+            setIsLoading(false)
+        }
+    }
+
+
+
+    useEffect(() => {
+        getAllProductsAndUserCart()
+    }, [])
     return (
         <div>
             <div className='flex justify-between items-center max-w-[1116px] m-auto mt-[56px]'>
@@ -29,23 +55,23 @@ const YourCart = () => {
                         <h5 className='text-[#0E1422] font-bold mt-[16px]'>Your cart</h5>
                         <hr className='mt-[18px] w-[628px]'></hr>
                     </div>
-                    {cartItems.map((item) => (
-                        <div key={item.id} className="flex justify-between mt-[48px]">
-                            <div className="flex gap-[32px]">
-                                <img className="rounded-[4px] transition hover:scale-110 hover:-translate-y-1 duration-500" src={item.img} alt={item.alt} />
-                                <div>
-                                    <p className="text-[#0E1422] font-semibold mt-[9px]">{item.title}</p>
+                    {products.map((product, index) => (
+                        <div key={index} className="flex justify-between mt-[48px]">
+                            <div className="flex gap-[32px] ">
+                                <img className="rounded-[4px] transition hover:scale-110 hover:-translate-y-1 duration-500 w-[100px] h-[100px]" src={product.image} alt={product.alt} />
+                                <div className='w-[300px]'>
+                                    <p className="text-[#0E1422] font-semibold mt-[9px] ">{product.title}</p>
                                     <div className="flex items-center mt-[6px] gap-[8px]">
                                         <p className="text-[#5C5F6A]">Color: </p>
-                                        <div className="w-[12px] h-[12px] rounded-full" style={{ backgroundColor: item.color }}></div>
+                                        <div className="w-[12px] h-[12px] rounded-full"></div>
                                         <p className="text-[#5C5F6A]">—</p>
-                                        <p className="text-[#5C5F6A]">Size: {item.size}</p>
+                                        <p className="text-[#5C5F6A]">Size:</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="flex">
                                 <div className="flex gap-[32px] mr-[16px]">
-                                    <p className="font-semibold mt-2">{item.price}</p>
+                                    <p className="font-semibold mt-2">{product.price}</p>
                                     <CartCounter />
                                 </div>
                                 <button className="w-[40px] h-[40px] transition hover:scale-110 hover:-translate-y-1 duration-500" aria-label="Remove Item">
