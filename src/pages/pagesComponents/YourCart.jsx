@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import CartCounter from './CartCounter';
 
 
@@ -11,13 +11,11 @@ const YourCart = () => {
     const getAllProductsAndUserCart = async () => {
         setIsLoading(true)
         try {
-            // Fetching products
             const products_res = await fetch('https://fakestoreapi.com/products')
             const products_data = await products_res.json()
             
 
-            // Fetching user cart
-            const cart_res = await fetch('https://fakestoreapi.com/carts/3')
+            const cart_res = await fetch('https://fakestoreapi.com/carts/1')
             const cart_products = await cart_res.json()
 
 
@@ -56,7 +54,7 @@ const YourCart = () => {
                         <hr className='mt-[18px] w-[628px]'></hr>
                     </div>
                     {products.map((product, index) => (
-                        <div key={index} className="flex justify-between mt-[48px]">
+                        <div key={index} className="flex justify-between mt-[48px] max-w-[628px]">
                             <div className="flex gap-[32px] ">
                                 <img className="rounded-[4px] transition hover:scale-110 hover:-translate-y-1 duration-500 w-[100px] h-[100px]" src={product.image} alt={product.alt} />
                                 <div className='w-[300px]'>
@@ -71,7 +69,7 @@ const YourCart = () => {
                             </div>
                             <div className="flex">
                                 <div className="flex gap-[32px] mr-[16px]">
-                                    <p className="font-semibold mt-2">{product.price}</p>
+                                    <p className="font-semibold mt-2">${product.price}</p>
                                     <CartCounter />
                                 </div>
                                 <button className="w-[40px] h-[40px] transition hover:scale-110 hover:-translate-y-1 duration-500" aria-label="Remove Item">
