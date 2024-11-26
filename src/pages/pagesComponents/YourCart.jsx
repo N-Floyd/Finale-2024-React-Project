@@ -5,11 +5,12 @@ import CartCounter from './CartCounter';
 
 
 const YourCart = () => {
-    const [products, setProducts] = useState([])
-    const [isLoading, setIsLoading] = useState(false)
+    const [products, setProducts] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
+    const [totalPrice, setTotalPrice] = useState(0);
 
     const getAllProductsAndUserCart = async () => {
-        setIsLoading(true)
+        setIsLoading(true);
         try {
             const products_res = await fetch('https://fakestoreapi.com/products')
             const products_data = await products_res.json()
@@ -24,27 +25,29 @@ const YourCart = () => {
             for (let index = 0; index < cart_products.products.length; index++) {
                 const element = cart_products.products[index];
 
-                products_data.find((product) => {
-                    if (product.id === element.productId) {
-                        cart_products_data.push(product)
-                    }
-                })
+                const foundProduct = products_data.find((product) => product.id === element.productId);
+                if (foundProduct) {
+                    cart_products_data.push(foundProduct);
+                }
             }
 
-            setProducts(cart_products_data)
+            setProducts(cart_products_data);
+
+            const newTotalPrice = cart_products_data.reduce((acc, product) => acc + product.price, 0);
+            setTotalPrice(newTotalPrice);
 
         } catch (error) {
             console.log(error)
         }finally {
             setIsLoading(false)
         }
-    }
-
+    };
 
 
     useEffect(() => {
         getAllProductsAndUserCart()
-    }, [])
+    }, []);
+
     return (
         <div>
             <div className='flex justify-between items-center max-w-[1116px] m-auto mt-[56px]'>
@@ -85,7 +88,7 @@ const YourCart = () => {
                     <div>
                         <div className='flex justify-between mt-[40px]'>
                             <p className='text-[#5C5F6A]'>Subtotal</p>
-                            <p className='text-[#0E1422] font-semibold'>$ 90.00</p>
+                            <p className='text-[#0E1422] font-semibold'>${totalPrice.toFixed(2)}</p>
                         </div>
                         <div className='flex justify-between mt-[12px]'>
                             <p className='text-[#5C5F6A]'>Shipping: </p>
@@ -99,7 +102,7 @@ const YourCart = () => {
                     <hr className='mt-[24px]'></hr>
                     <div className='flex justify-between mt-[24px]'>
                         <p className='text-[14px] text-[#0E1422] font-semibold'>Total</p>
-                        <p className='text-[14px] text-[#0E1422] font-semibold'>$ 100.00</p>
+                        <p className='text-[14px] text-[#0E1422] font-semibold'>${(totalPrice + 3).toFixed(2)}</p>
                     </div>
                     <a href="#"><button className='w-[296px] h-[44px] mt-[32px] rounded-[4px] bg-[#0E1422] text-white hover:scale-110 duration-500' type="submit" value="Submit">Checkout</button></a>
 
