@@ -27,7 +27,7 @@ const YourCart = () => {
 
                 const foundProduct = products_data.find((product) => product.id === element.productId);
                 if (foundProduct) {
-                    cart_products_data.push(foundProduct);
+                    cart_products_data.push({foundProduct, ...foundProduct, quantity: 1,});
                 }
             }
 
@@ -47,6 +47,25 @@ const YourCart = () => {
     useEffect(() => {
         getAllProductsAndUserCart()
     }, []);
+
+    const updateProductQuantity = (productId, newQuantity) => {
+        const updatedProducts = products.map(product => 
+            product.id === productId ? { ...product, quantity: newQuantity } : product
+        );
+        setProducts(updatedProducts);
+
+        const newTotalPrice = updatedProducts.reduce((acc, product) => acc + (product.price * product.quantity), 0);
+        setTotalPrice(newTotalPrice);
+    };
+
+    const removeProduct = (productId) => {
+        const updatedProducts = products.filter(product => product.id !== productId);
+        setProducts(updatedProducts);
+
+        // Update total price
+        const newTotalPrice = updatedProducts.reduce((acc, product) => acc + (product.price * product.quantity), 0);
+        setTotalPrice(newTotalPrice);
+    };
 
     return (
         <div>
@@ -73,9 +92,9 @@ const YourCart = () => {
                             <div className="flex">
                                 <div className="flex gap-[32px] mr-[16px]">
                                     <p className="font-semibold mt-2">${product.price}</p>
-                                    <CartCounter />
+                                    <CartCounter count={product.quantity} onQuantityChange={(newQuantity) => updateProductQuantity(product.id, newQuantity)} />
                                 </div>
-                                <button className="w-[40px] h-[40px] transition hover:scale-110 hover:-translate-y-1 duration-500" aria-label="Remove Item">
+                                <button className="w-[40px] h-[40px] transition hover:scale-110 hover:-translate-y-1 duration-500" aria-label="Remove Item" onClick={() => removeProduct(product.id)}>
                                     <img src="/images/cartx.svg" alt="Remove item" />
                                 </button>
                             </div>

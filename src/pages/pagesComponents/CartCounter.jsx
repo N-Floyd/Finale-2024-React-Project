@@ -1,19 +1,17 @@
 import React, { useState } from 'react'
 
-const CartCounter = () => {
-    const [count, setCount] = useState(1);
-
+const CartCounter = ({ count, onQuantityChange }) => {
     const plus = () => {
-        setCount(count + 1);
+        onQuantityChange(count + 1);
     };
+    
     const minus = () => {
-
-        if (count === 1) {
-            return null
+        if (count > 1) {
+            onQuantityChange(count - 1);
         }
-        
-        setCount(count - 1);
     };
+
+    
     return (
 
 

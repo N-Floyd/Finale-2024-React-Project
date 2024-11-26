@@ -42,7 +42,6 @@ const ProductSwiper = () => {
     if (!productDetails) return <div>Product not found!</div>;
 
 
-
     return (
         <div>
             <div className="flex justify-between max-w-[1116px] py-8  mx-auto">
