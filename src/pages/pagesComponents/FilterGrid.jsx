@@ -46,21 +46,21 @@ const FilterGrid = () => {
 
     return (
         <div class="grid grid-rows-3 grid-flow-col gap-[24px] max-w-[1116px] mt-[16px]">
-            {products.slice(1, 10).map((productlist, index) => (
+            {products.slice(11, 20).map((productlist, index) => (
                 <div key={index}>
                     <Link to={`/product/${productlist.id}`}>
                         <div className="cursor-pointer transition hover:scale-110 duration-500 hover:animate-bounce">
                             <img className='w-[248px] h-[312px] px-5 py-5' src={productlist.image} />
                         </div>
                         <div>
-                            <p className="font-medium text-sm mt-3 w-[248px] h-[40px]">
+                            <p className="font-medium text-sm mt-3 w-[248px] h-[70px]">
                                 {productlist.title}
                             </p>
                             <div className="flex items-center mt-2 gap-[16px]">
                                 <button className="text-center w-20 h-7 rounded-full border text-xs font-medium mt-3 items-center">
                                     IN STOCK{productlist.stock}
                                 </button>
-                                <div className="mt-3 ml-2 font-normal text-sm text-center">${productlist.price}</div>
+                                <div className="mt-3 ml-2 text-sm text-center">${productlist.price}</div>
                             </div>
                         </div>
                     </Link>

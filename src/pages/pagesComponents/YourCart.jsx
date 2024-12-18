@@ -94,7 +94,8 @@ const YourCart = () => {
                                     <p className="font-semibold mt-2">${product.price}</p>
                                     <CartCounter count={product.quantity} onQuantityChange={(newQuantity) => updateProductQuantity(product.id, newQuantity)} />
                                 </div>
-                                <button className="w-[40px] h-[40px] transition hover:scale-110 hover:-translate-y-1 duration-500" aria-label="Remove Item" onClick={() => removeProduct(product.id)}>
+                                <button className="w-[40px] h-[40px] transition hover:scale-110 hover:-translate-y-1 duration-500" aria-label="Remove Item" 
+                                onClick={() => removeProduct(product.id)}>
                                     <img src="/images/cartx.svg" alt="Remove item" />
                                 </button>
                             </div>
