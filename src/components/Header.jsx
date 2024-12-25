@@ -71,7 +71,7 @@ const Header = () => {
               <Link to="/about">About</Link>
             </li>
             <li className="transition hover:-translate-y-1 hover:scale-110 duration-500 rounded-[5px]">
-              <Link to="/contact">Contact</Link>
+              <Link to="/contacth">Contact</Link>
             </li>
           </ul>
         </div>
