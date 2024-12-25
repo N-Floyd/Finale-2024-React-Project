@@ -48,7 +48,7 @@ const LoginEm = () => {
   return (
     <div className="max-w-[1116px] flex justify-center mx-auto">
       <div className="mt-[123px] mb-[148px]">
-        <Link to="https://mail.google.com/mail/" className="flex justify-center pt-2 gap-[8px] border border-1 border-[#B6B7BC] w-[320px] h-[44px] rounded-[4px] transition hover:scale-110 hover:-translate-y-1 duration-500">
+        <Link to="https://www.google.com/" className="flex justify-center pt-2 gap-[8px] border border-1 border-[#B6B7BC] w-[320px] h-[44px] rounded-[4px] transition hover:scale-110 hover:-translate-y-1 duration-500">
           <img className="w-[24px] h-[24px]" src="/images/google.svg" alt="google icon" />
           <p className="text-[#5C5F6A]">Continue with Google</p>
         </Link>

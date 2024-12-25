@@ -62,7 +62,6 @@ const YourCart = () => {
         const updatedProducts = products.filter(product => product.id !== productId);
         setProducts(updatedProducts);
 
-        // Update total price
         const newTotalPrice = updatedProducts.reduce((acc, product) => acc + (product.price * product.quantity), 0);
         setTotalPrice(newTotalPrice);
     };

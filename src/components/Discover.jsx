@@ -21,7 +21,7 @@ const Discover = () => {
                     <h1 className="text-[#202533] text-[32px] font-boldn imate-fadeInUp">Fresh Arrivals Online</h1>
                     <p className="mt-[12px] text-[#474B57] text-[14px] animate-fadeInUp">Discover Our Newest Collection Today.</p>
 
-                    <Link to="/aproducts" className="h-[44px] w-[183px] mt-[48px] flex justify-center items-center rounded-[4px] bg-[#0E1422] gap-[6px] hover:scale-110 transition-all duration-300 ease-in-out hover:bg-[#212B3A] hover:shadow-lg" >
+                    <Link to="/listing" className="h-[44px] w-[183px] mt-[48px] flex justify-center items-center rounded-[4px] bg-[#0E1422] gap-[6px] hover:scale-110 transition-all duration-300 ease-in-out hover:bg-[#212B3A] hover:shadow-lg" >
                         <button className="text-white">View Collection</button>
                         <img className="w-[24px]" src="/images/arrow.svg" alt="arrow icon" />
                     </Link>
