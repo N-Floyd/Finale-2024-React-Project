@@ -31,6 +31,7 @@ import ProductSwiper from './pages/pagesComponents/ProductSwiper';
 import ListingAsideCategory from './pages/pagesComponents/ListingAsideCategory';
 import FilterGrid from './pages/pagesComponents/FilterGrid';
 import ContactH from './pages/ContactH';
+import AboutUs from './pages/pagesComponents/AboutUs';
 
 function App() {
   return (
@@ -71,6 +72,7 @@ function App() {
         <Route path='/filtergrid' element={<FilterGrid />} />
         <Route path='/category/:category_id' element={<FilterGrid />} />
         <Route path='/contacth' element={<ContactH />} />
+        <Route path='/aboutus' element={<AboutUs />} />
         
       </Routes>
     </div>

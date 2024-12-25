@@ -68,7 +68,7 @@ const Header = () => {
               </Menu>
             </li>
             <li className="transition hover:-translate-y-1 hover:scale-110 duration-500 rounded-[5px]">
-              <Link to="/about">About</Link>
+              <Link to="/aboutus">About</Link>
             </li>
             <li className="transition hover:-translate-y-1 hover:scale-110 duration-500 rounded-[5px]">
               <Link to="/contacth">Contact</Link>
