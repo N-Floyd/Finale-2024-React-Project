@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CartCounter from './CartCounter';
+import { Link } from 'react-router-dom';
 
 
 
@@ -123,7 +124,9 @@ const YourCart = () => {
                         <p className='text-[14px] text-[#0E1422] font-semibold'>Total</p>
                         <p className='text-[14px] text-[#0E1422] font-semibold'>${(totalPrice + 3).toFixed(2)}</p>
                     </div>
-                    <a href="#"><button className='w-[296px] h-[44px] mt-[32px] rounded-[4px] bg-[#0E1422] text-white hover:scale-110 duration-500' type="submit" value="Submit">Checkout</button></a>
+                    <Link to="/checkout">
+                    <button className='w-[296px] h-[44px] mt-[32px] rounded-[4px] bg-[#0E1422] text-white hover:scale-110 duration-500' type="submit" value="Submit">Checkout</button>
+                    </Link>
 
                     <div className='border-b w-[110px] border-[#0E1422] mt-[15%] ml-[50%] transform translate-x-[-50%] translate-y-[-50%] hover:scale-110 duration-500'>
                         <a href='#' className='text-[#0E1422] font-semibold mt-[32px] text-[12px]'>Continue Shopping</a>

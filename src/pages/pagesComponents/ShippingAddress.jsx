@@ -36,7 +36,7 @@ const ShippingAddress = () => {
                     <p className='text-[#0E1422] font-semibold'>Total</p>
                     <p className='text-[#0E1422] font-semibold'>$ 78.00</p>
                 </div>
-                <Link to="/orders"><button className='w-[372px] h-[44px] rounded-[4px] bg-[#0E1422] text-white mt-[24px] hover:scale-110 duration-500' type="submit" value="Submit">Place Order</button></Link>
+                <Link to="/afterPayments"><button className='w-[372px] h-[44px] rounded-[4px] bg-[#0E1422] text-white mt-[24px] hover:scale-110 duration-500' type="submit" value="Submit">Place Order</button></Link>
             </div>
         </div>
     )
