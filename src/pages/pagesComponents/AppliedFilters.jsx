@@ -45,13 +45,13 @@ const AppliedFilters = () => {
 
                     <MenuItems className="absolute right-0 z-10 mt-2 w-48 origin-top-right bg-white border border-gray-300 rounded-md shadow-lg focus:outline-none">
                         <MenuItem>
-                            <Link to="/category1" className='block px-4 py-2 hover:scale-110 duration-500'>Price: Low to High</Link>
+                            <Link to="/listing" className='block px-4 py-2 hover:scale-110 duration-500'>Price: Low to High</Link>
                         </MenuItem>
                         <MenuItem>
-                            <Link to="/category1" className='block px-4 py-2 hover:scale-110 duration-500'>Price: High to Low</Link>
+                            <Link to="/listing" className='block px-4 py-2 hover:scale-110 duration-500'>Price: High to Low</Link>
                         </MenuItem>
                         <MenuItem>
-                            <Link to="/category1" className='block px-4 py-2 hover:scale-110 duration-500'>Newest Arrivals</Link>
+                            <Link to="/listing" className='block px-4 py-2 hover:scale-110 duration-500'>Newest Arrivals</Link>
                         </MenuItem>
 
                     </MenuItems>

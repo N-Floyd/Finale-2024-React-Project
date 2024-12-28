@@ -34,7 +34,7 @@ const AboutUs = () => {
                 <img className='w-[500px] h-[300px] px-4 py-4' src="/images/clothing2.png" alt="clothing" />
             </div>
 
-            <div className='max-w-[1116px] justify-center gap-7 mx-auto mt-[200px] transition hover:scale-110 hover:-translate-y-1 duration-500'>
+            <div className='max-w-[1116px] justify-center gap-7 mx-auto mt-[200px]'>
                 <h3 className='max-w-[1116px] flex justify-center gap-2 mx-auto text-[40px] text-gray-700 font-semibold ml-5 mt-3'>A global company</h3>
                 <p className='max-w-[1116px] flex justify-center mx-auto text-gray-500 text-[20px]  mt-7'>At Ecommerce, we have sought to bring our passion for fashion to the world from the start. Present in more than 120 markets, </p>
                 <p className='max-w-[1116px] flex justify-center mx-auto text-gray-500 text-[20px]'>Ecommerce adapts to each country, with a complete ecosystem of international channels and partners and a network of close</p>

@@ -8,21 +8,21 @@ const Footer = () => {
   ];
 
   const supportLinks = [
-    { href: "#", text: "FAQ" },
+    { href: "/faq", text: "FAQ" },
     { href: "#", text: "Terms of use" },
-    { href: "#", text: "Privacy Policy" }
+    { href: "/privacypolicy", text: "Privacy Policy" }
   ];
 
   const companyLinks = [
-    { href: "#", text: "About us" },
-    { href: "#", text: "Contact" },
+    { href: "/aboutus", text: "About us" },
+    { href: "/contacth", text: "Contact" },
     { href: "#", text: "Careers" }
   ];
 
   const shopLinks = [
-    { href: "#", text: "My Account" },
-    { href: "#", text: "Checkout" },
-    { href: "#", text: "Cart" }
+    { href: "/login", text: "My Account" },
+    { href: "/checkout", text: "Checkout" },
+    { href: "/cart", text: "Cart" }
   ];
 
   const paymentIcons = [

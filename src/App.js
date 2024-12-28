@@ -32,6 +32,8 @@ import ListingAsideCategory from './pages/pagesComponents/ListingAsideCategory';
 import FilterGrid from './pages/pagesComponents/FilterGrid';
 import ContactH from './pages/ContactH';
 import AboutUs from './pages/pagesComponents/AboutUs';
+import PrivacyPolicy from './pages/pagesComponents/PrivacyPolicy';
+import Faq from './pages/pagesComponents/Faq';
 
 function App() {
   return (
@@ -73,6 +75,8 @@ function App() {
         <Route path='/category/:category_id' element={<FilterGrid />} />
         <Route path='/contacth' element={<ContactH />} />
         <Route path='/aboutus' element={<AboutUs />} />
+        <Route path='/privacypolicy' element={<PrivacyPolicy />} />
+        <Route path='/faq' element={<Faq />} />
         
       </Routes>
     </div>
