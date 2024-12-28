@@ -82,7 +82,7 @@ const Footer = () => {
             <p className="text-[#878A92]">ACCEPTED PAYMENTS</p>
             <div className="flex justify-between opacity-[80%] mt-[40px]">
               {paymentIcons.map(({ src, alt }) => (
-                <a key={alt} href="#" className="transition hover:scale-110 hover:-translate-y-1 duration-500">
+                <a key={alt} className="transition hover:scale-110 hover:-translate-y-1 duration-500">
                   <img src={src} alt={alt} />
                 </a>
               ))}

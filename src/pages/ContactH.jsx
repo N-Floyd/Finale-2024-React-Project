@@ -1,6 +1,7 @@
 import React from 'react'
 import Discount from '../components/Discount';
 import Header from '../components/Header';
+import FooterBG from './pagesComponents/FooterBG';
 
 const ContactH = () => {
     const mapWidth = '100%';
@@ -51,6 +52,7 @@ const ContactH = () => {
                 <h4 className='font-semibold'>Phone Number : +1 5837623874</h4>
                 <p className='font-semibold'>Email: info@ecommerce.com</p>
             </div>
+            <FooterBG />
         </div>
     )
 };
