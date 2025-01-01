@@ -39,7 +39,7 @@ const Header = () => {
 
 
   return (
-    <div className="flex justify-between items-center max-w-[1116px] py-8 m-auto">
+    <div className="sticky top-0 z-50 bg-white flex justify-between items-center max-w-[1116px] py-8 m-auto">
       <div className=' flex gap-[103px]'>
         <div className='w-[163px]'>
           <Link to="/">
